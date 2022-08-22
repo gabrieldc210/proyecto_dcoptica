@@ -225,7 +225,7 @@ form {
     -o-transform: scaleX(-1);
     -webkit-transform: scaleX(-1); 
     transform: scaleX(-1); 
-    filter: imgAnimacion; 
+    filter: imgMuestra1; 
 }
 .imgMuestra2 {
     grid-area: imgMuestra2;
@@ -238,6 +238,14 @@ form {
     background-color: rgb(238, 242, 241);
     border-radius: 10px;
     flex-wrap: wrap;
+}
+
+.imgMuestra2:hover {
+    -moz-transform: scaleX(-1); 
+    -o-transform: scaleX(-1);
+    -webkit-transform: scaleX(-1); 
+    transform: scaleX(-1); 
+    filter: imgMuestra2;  
 }
 
 .imgMuestra3 {
@@ -253,6 +261,14 @@ form {
     flex-wrap: wrap;
 }
 
+.imgMuestra3:hover {
+    -moz-transform: scaleX(-1); 
+    -o-transform: scaleX(-1);
+    -webkit-transform: scaleX(-1); 
+    transform: scaleX(-1); 
+    filter: imgMuestra3;  
+}
+
 .imgMuestra4 {
     grid-area: imgMuestra4;
     max-height: 30vh;
@@ -265,6 +281,15 @@ form {
     border-radius: 10px;
     flex-wrap: wrap;
 }
+
+.imgMuestra4:hover {
+    -moz-transform: scaleX(-1); 
+    -o-transform: scaleX(-1);
+    -webkit-transform: scaleX(-1); 
+    transform: scaleX(-1); 
+    filter: imgMuestra4;  
+}
+
 
 .imgMuestra5 {
     grid-area: imgMuestra5;
@@ -279,6 +304,15 @@ form {
     flex-wrap: wrap;
 }
 
+.imgMuestra5:hover {
+    -moz-transform: scaleX(-1); 
+    -o-transform: scaleX(-1);
+    -webkit-transform: scaleX(-1); 
+    transform: scaleX(-1); 
+    filter: imgMuestra5;  
+}
+
+
 .imgMuestra6 {
     grid-area: imgMuestra6;
     max-height: 30vh;
@@ -290,6 +324,14 @@ form {
     background-color: rgb(238, 242, 241);
     border-radius: 10px;
     flex-wrap: wrap;
+}
+
+.imgMuestra6:hover {
+    -moz-transform: scaleX(-1); 
+    -o-transform: scaleX(-1);
+    -webkit-transform: scaleX(-1); 
+    transform: scaleX(-1); 
+    filter: imgMuestra6;  
 }
 
 .imgMuestra7 {
@@ -305,6 +347,15 @@ form {
     flex-wrap: wrap;
 }
 
+.imgMuestra7:hover {
+    -moz-transform: scaleX(-1); 
+    -o-transform: scaleX(-1);
+    -webkit-transform: scaleX(-1); 
+    transform: scaleX(-1); 
+    filter: imgMuestra7;  
+}
+
+
 .imgMuestra8 {
     grid-area: imgMuestra8;
     max-height: 30vh;
@@ -317,6 +368,15 @@ form {
     border-radius: 10px;
     flex-wrap: wrap;
 }
+
+.imgMuestra8:hover {
+    -moz-transform: scaleX(-1); 
+    -o-transform: scaleX(-1);
+    -webkit-transform: scaleX(-1); 
+    transform: scaleX(-1); 
+    filter: imgMuestra8;  
+}
+
 
 .footerGrid {
     display: grid;
