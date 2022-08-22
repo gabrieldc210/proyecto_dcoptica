@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Dosis:wght@200;400&family=Open+Sans:ital,wght@0,400;1,300&family=Oswald&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="../css/styles.css">
+  <title>Contacto</title>
+</head>
+
+<body>
+
+
+
+  <header class="headerContacto">
+    <section class="barraTituloContacto bordeDelcontenedor">
+      <a id="centrarCabezal" href="../index.html"><img src="../imagen/logo.png" alt="Dc optica" width="50px"
+          height="50px"><span class="editarDc">Dc</span> <span class="editarOptica">optica</span></a>
+    </section>
+    <nav>
+      <ul class="itemsContacto moverCajas cajaDelista">
+        <li><a href="../index.html">Inicio</a></li>
+        <li><a href="./anteojos_de_sol.html">Anteojos de sol</a></li>
+        <li><a href="./anteojo_de_receta.html">Anteojos de receta</a></li>
+        <li><a href="./lentes_de_contacto.html">Lentes de contacto</a></li>
+        <li><a href="./contacto.html">Contacto</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main class="formGrid">
+    <form action="" method="post">
+      <fieldset>
+        <legend><b>Contacto</b></legend>
+        <p>Comunicate al whatsapp 1122334455.</p>
+        <p>dcoptica@gmail.com</p>
+        <p>Av. Santa Fe 1400 Caba</p>
+        <div>
+          <label for="Nombre">ingrese su Nombre</label>
+          <input type="text" id="Nombre" placeholder="ingrese su Nombre">
+        </div>
+        <div>
+          <label for="Apellido">ingrese su Apellido</label>
+          <input type="text" id="Apellido" placeholder="ingrese su Apellido">
+        </div>
+        <label for="Correo">ingrese su Email</label>
+        <input type="email" name="ingrese su Email" id="Correo" placeholder="ingrese su Email">
+        <div>
+          <label for="Tel">ingrese su Telefono</label>
+          <input type="Tel" name="ingrese su Telefono" id="Tel" placeholder="ingrese su Telefoono">
+        </div>
+        <h4>Motivo consulta</h4>
+        <select name="motivo" id="motivo">
+          <option value="r">presupuesto</option>
+          <option value="a">turnos</option>
+          <option value="v">reparaciones</option>
+        </select>
+        <div>
+          <textarea name="Mensaje" id="message" cols="20" rows="5" placeholder="ingrese su Mensaje"></textarea>
+        </div>
+        <div>
+          <input type="reset" value="Borrar">
+          <button>Enviar</button>
+        </div>
+      </fieldset>
+    </form>
+  </main>
+  <hr>
+  <footer class="footerContacto">
+    <address>
+      <div>
+        <p>Santa Fe 1400 </p>
+      </div>
+      <div>
+        <p>dcoptica@gmail.com</p>
+      </div>
+      <p>1122334455</p>
+    </address>
+    <p>copyright Dc Optica - 2022. Todos los derechos reservados</p>
+  </footer>
+</body>
+
+</html>
