@@ -122,7 +122,9 @@ form {
     margin: 5px;
 }
 
-
+.footerGradiente {
+    background-image: radial-gradient(circle, rgba(34,193,195,1) 50%, rgba(4,6,3,0.7235936610972514) 100%);
+}
 
 .headerGrid {
     display: grid;
@@ -171,7 +173,7 @@ form {
       
     }
     100%{
-        background-color: aqua;
+        background-color: #22c1c3;
     }
 }
 
