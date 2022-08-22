@@ -197,6 +197,13 @@ form {
     flex-wrap: wrap;
 }
 
+.imgMuestra1:hover {
+    -moz-transform: scaleX(-1); 
+    -o-transform: scaleX(-1);
+    -webkit-transform: scaleX(-1); 
+    transform: scaleX(-1); 
+    filter: imgAnimacion; 
+}
 .imgMuestra2 {
     grid-area: imgMuestra2;
     max-height: 30vh;
