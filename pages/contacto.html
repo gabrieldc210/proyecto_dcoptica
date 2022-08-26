@@ -1,16 +1,114 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-    <link rel="stylesheet" href="./css/styles.css">
-    <title>Document</title>
+    <link rel="stylesheet" href="../css/styles.css">
+    <title>contacto</title>
 </head>
+
 <body>
-    
+
+    <header class="conteiner">
+        <div class="row h1 bg-light lh-lg">
+            <div class="col-5"></div>
+            <div class="col-7">Dc Optica</div>
+        </div>
+    </header>
+
+    <main>
+        <div class="conteiner">
+            <div class="row">
+                <div class="col-2 border border-dark">
+                    <div>inicio</div>
+                    <div>Anteojos de Sol</div>
+                    <div>Anteojos de receta</div>
+                    <div>Lentes de contacto</div>
+                    <div>contacto</div>
+                </div>
+            </div>
+        </div>
+
+        <div class="conteinerForm">
+            <form class="row">
+
+                <div class="col-5 border border-dark mt-3 mb-3">
+                    <div class="h2">
+                        Contacto
+                    </div>
+                    <div>
+                        <p>Comunicate al whatsapp 1122334455.</p>
+                    </div>
+                    <div>
+                        <p>dcoptica@gmail.com</p>
+                    </div>
+                    <div>
+                        <p>Av. Santa Fe 1400 Caba</p>
+                    </div>
+                    <div>
+                        <label for="Nombre">ingrese su Nombre</label>
+                        <input type="text" id="Nombre" placeholder="ingrese su Nombre">
+                    </div>
+                    <div>
+                        <label for="Apellido">ingrese su Apellido</label>
+                        <input type="text" id="Apellido" placeholder="ingrese su Apellido">
+                    </div>
+                    <div>
+                        <label for="Correo">ingrese su Email</label>
+                        <input type="email" name="ingrese su Email" id="Correo" placeholder="ingrese su Email">
+                    </div>
+                    <div>
+                        <label for="Tel">ingrese su Telefono</label>
+                        <input type="Tel" name="ingrese su Telefono" id="Tel" placeholder="ingrese su Telefoono">
+                      </div>
+                      <div class="h4">Motivo consulta</div>
+                      <div>
+                        <select name="motivo" id="motivo">
+                            <option value="r">presupuesto</option>
+                            <option value="a">turnos</option>
+                            <option value="v">reparaciones</option>
+                          </select>
+                      </div>
+                      <div>
+                        <textarea name="Mensaje" id="message" cols="20" rows="5" placeholder="ingrese su Mensaje"></textarea>
+                      </div>
+                      <div>
+                        <input type="reset" value="Borrar">
+                        <button>Enviar</button>
+                      </div>
+
+
+                </div>
+            </form>
+        </div>
+    </main>
+
+
+
+
+
+
+
+
+
+    <footer class="text-center border">
+        <div class="conteiner-fluid">
+            <div class="row bg-light">
+                <div class="col" :>
+                    <div class="col">
+                        <p>Santa Fe 1400 </p>
+                        <p>dcoptica@gmail.com</p>
+                        <p>1122334455</p>
+                        <p>copyright Dc Optica - 2022. Todos los derechos reservados</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
 
 
 
@@ -21,10 +119,11 @@
 
 
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
-    integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p"
-    crossorigin="anonymous"></script>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"
-    integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF"
-    crossorigin="anonymous"></script>
+        integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"
+        integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF"
+        crossorigin="anonymous"></script>
 </body>
+
 </html>
