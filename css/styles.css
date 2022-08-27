@@ -85,5 +85,8 @@ a {
 }
 
 .mainIndex {
-    
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 40vh 10vh 6% 6% 9% 9% 34.7%;
+    grid-template-areas: ;
 }
