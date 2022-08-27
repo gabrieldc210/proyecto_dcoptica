@@ -14,3 +14,14 @@
     z-index: 5;
 }
 
+.editarDc {
+    color: black;
+    font-size: 4em;
+    font-family: 'Dosis', sans-serif;
+}
+
+.editarOptica {
+    color: #40E0D0;
+    font-size: 4em;
+    font-family: 'Oswald', sans-serif;
+}
