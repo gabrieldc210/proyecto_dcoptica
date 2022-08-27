@@ -11,15 +11,14 @@ body {
 }
 
 
-.bordeDelcontenedor {
+/* .bordeDelcontenedor {
     position: fixed;
     top: 0;
     border: 1.5px solid rgba(184, 170, 170, 0.68);
     background-color: rgb(238, 242, 241);
     width: 100%;
     z-index: 5;
-
-}
+} */
 
 .editarDc {
     color: black;
@@ -43,13 +42,6 @@ a {
     text-decoration: none;
 }
 
-.moverLiytext {
-    display: flex;
-    flex-direction: row;
-    align-items: flex-end;
-    margin-top: 15vh;
-}
-
 .bordeDeli {
     border: 1.5px solid rgba(184, 170, 170, 0.68);
     border-radius: 15px;
@@ -62,13 +54,20 @@ a {
 
 .headerIndex {
     display: grid;
-    grid-template-columns: 1fr 2fr;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 13vh 140px;
     grid-template-areas: "barraTituIndex barraTituIndex"
                         "itemsIndex tituloIndex";
 }
 
 .barraTituIndex {
     grid-area: barraTituIndex;
+    position: fixed;
+    top: 0;
+    border: 1.5px solid rgba(184, 170, 170, 0.68);
+    background-color: rgb(238, 242, 241);
+    width: 100%;
+    z-index: 5;
 }
 
 .itemsIndex {
