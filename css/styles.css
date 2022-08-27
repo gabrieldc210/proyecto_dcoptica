@@ -12,7 +12,7 @@
     background-color: rgb(238, 242, 241);
     width: 100%;
     z-index: 5;
-    
+
 }
 
 .editarDc {
@@ -38,8 +38,8 @@ header a {
 }
 
 .moverLiytext {
-/*     display: flex;
+    display: flex;
     flex-direction: row;
     align-items: flex-end;
-    margin-top: 15vh; */
+    margin-top: 15vh;
 }
