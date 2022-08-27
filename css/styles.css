@@ -47,11 +47,6 @@ a {
     border-radius: 15px;
 }
 
-.imgInicio {
-    width: 40vh;
-    height: auto;
-}
-
 .headerIndex {
     display: grid;
     grid-template-columns: 1fr 8fr;
