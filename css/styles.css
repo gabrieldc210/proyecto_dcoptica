@@ -54,7 +54,7 @@ a {
 
 .headerIndex {
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr 8fr;
     grid-template-rows: 13vh 140px;
     grid-template-areas: "barraTituIndex barraTituIndex"
                         "itemsIndex tituloIndex";
@@ -72,6 +72,7 @@ a {
 
 .itemsIndex {
     grid-area: itemsIndex;
+    
 }
 
 .tituloIndex {
