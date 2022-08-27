@@ -66,3 +66,15 @@ a {
     grid-template-areas: "barraTituIndex barraTituIndex"
                         "itemsIndex tituloIndex";
 }
+
+.barraTituIndex {
+    grid-area: barraTituIndex;
+}
+
+.itemsIndex {
+    grid-area: itemsIndex;
+}
+
+.tituloIndex {
+    grid-area: tituloIndex;
+}
