@@ -44,6 +44,7 @@ header a {
     margin-top: 15vh;
 }
 
-.cajaDelista {
-    
+.bordeDeli {
+    border: 1.5px solid rgba(184, 170, 170, 0.68);
+    border-radius: 15px;
 }
