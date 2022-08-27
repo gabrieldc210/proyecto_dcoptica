@@ -36,3 +36,10 @@
 header a {
     text-decoration: none;
 }
+
+.moverLiytext {
+/*     display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+    margin-top: 15vh; */
+}
