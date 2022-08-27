@@ -63,4 +63,6 @@ a {
 .headerIndex {
     display: grid;
     grid-template-columns: 1fr 2fr;
+    grid-template-areas: "barraTituIndex barraTituIndex"
+                        "itemsIndex tituloIndex";
 }
