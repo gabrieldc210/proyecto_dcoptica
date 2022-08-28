@@ -193,3 +193,8 @@ a {
 }
 
 /*------- fin de TABLA-------*/
+
+.videoIndex {
+    grid-area: videoIndex;
+    text-align: center;
+}
