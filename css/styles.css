@@ -77,7 +77,6 @@ a {
     display: flex;
     justify-content: center;
     align-items: center;
-    
 }
 
 .mainIndex {
@@ -95,20 +94,14 @@ a {
 
 .imgIndex1 {
     grid-area: imgIndex1;
-    width: 40vh;
-    height: auto;
 }
 
 .imgIndex2 {
     grid-area: imgIndex2;
-    width: 40vh;
-    height: auto;
 }
 
 .imgIndex3 {
-    grid-area: imgIndex3;
-    width: 40vh;
-    height: auto;
+    grid-area: imgIndex3; 
 }
 
 .loremIndex {
