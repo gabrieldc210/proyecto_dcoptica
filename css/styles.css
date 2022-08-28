@@ -1,5 +1,5 @@
 body {
-    background-image: url("../imagen/glass.jpg");
+   /*  background-image: url("../imagen/glass.jpg"); */
     background-size: cover;
     display: block;
 }
@@ -82,7 +82,7 @@ a {
 .mainIndex {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 40vh 10vh 6% 6% 9% 9% 43%;
+    grid-template-rows: .5fr .1fr .2fr .2fr .2fr .2fr 1fr;
     grid-template-areas: "imgIndex1 imgIndex2 imgIndex3"
                          "loremIndex loremIndex loremIndex"
                          "tb1 tb1 tb1"
@@ -110,7 +110,7 @@ a {
     grid-area: imgIndex3;
     display: flex;
     justify-content: center;
-    align-items: center; 
+    align-items: center;
 }
 
 .loremIndex {
@@ -199,14 +199,29 @@ a {
 .videoIndex {
     grid-area: videoIndex;
     text-align: center;
-    margin-top: 20px;
+   margin-top: 10vh;
+}
+
+
+
+.footerIndex {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+    grid-template-areas: "footerIndex";
+}
+
+.footerIndex {
+    grid-area: footerIndex;
+    background-color: rgb(238, 242, 241);
+    text-align: center;
 }
 
 .container {
-    grid-area: conteinerBoton;
     background-color: #2e6329;
     border: 1px solid #fff;
-    z-index: 999;
+    position: sticky;
+    z-index: 5;
     border-radius: 50%;
     bottom: 20px;
     transition: ease 1.3s;
@@ -221,14 +236,6 @@ a {
 .boton{
     width: 80px;
     transition: ease 1s;
-    position: absolute;
-    position: sticky;
-    left: 80%;
-}
-
-.footerIndex {
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: 10vh;
-    grid-template-areas: "footerIndex";
+    left: 92%;
+    
 }
