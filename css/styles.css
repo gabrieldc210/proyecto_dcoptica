@@ -83,5 +83,11 @@ a {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 40vh 10vh 6% 6% 9% 9% 34.7%;
-    grid-template-areas: ;
+    grid-template-areas: "imgIndex1 imgIndex2 imgIndex3"
+                         "loremIndex loremIndex loremIndex"
+                         "tb1 tb1 tb1"
+                         "tb2 tb3 tb3"
+                         "tb4 tb5 tb5"
+                         "tb6 tb7 tb7"
+                         "videoIndex videoIndex videoIndex";
 }
