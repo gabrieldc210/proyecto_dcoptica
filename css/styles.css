@@ -60,7 +60,7 @@ a {
     position: fixed;
     top: 0;
     border: 1.5px solid rgba(184, 170, 170, 0.68);
-    background-color: rgb(238, 242, 241);
+    background-image: linear-gradient(0deg, rgba(34,193,195,1) 0%, rgba(4,6,3,0.7235936610972514) 38%);
     width: 100%;
     z-index: 5;
 }
@@ -116,28 +116,35 @@ a {
 
 .tb1 {
     grid-area: tb1;
+    background-color: aqua;
 }
 
 .tb2 {
     grid-area: tb2;
+    background-color: aqua;
 }
 
 .tb3 {
     grid-area: tb3;
+    background-color: aqua;
 }
 
 .tb4 {
     grid-area: tb4;
+    background-color: aqua;
 }
 
 .tb5 {
     grid-area: tb5;
+    background-color: aqua;
 }
 
 .tb6 {
     grid-area: tb6;
+    background-color: aqua;
 }
 
 .tb7 {
     grid-area: tb7;
+    background-color: aqua;
 }
