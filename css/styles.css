@@ -77,6 +77,7 @@ a {
     display: flex;
     justify-content: center;
     align-items: center;
+    
 }
 
 .mainIndex {
@@ -115,6 +116,8 @@ a {
     text-align: center;
 }
 
+/*-------TABLA-------*/
+
 .tb1 {                    
     grid-area: tb1;
     background-color: aqua;
@@ -122,6 +125,8 @@ a {
     justify-content: center;
     align-items: center; 
     border: black solid;
+    margin-right: 52vh;
+    margin-left: 53vh;
 }
 
 .tb2 {
@@ -131,15 +136,18 @@ a {
     justify-content: center;
     align-items: center; 
     border: black solid;
+    margin-left: 53vh;
 }
 
 .tb3 {
     grid-area: tb3;
     background-color: aqua;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center; 
     border: black solid;
+    margin-right: 52vh;
 }
 
 .tb4 {
@@ -149,15 +157,18 @@ a {
     justify-content: center;
     align-items: center; 
     border: black solid;
+    margin-left: 53vh;
 }
 
 .tb5 {
     grid-area: tb5;
     background-color: aqua;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center; 
     border: black solid;
+    margin-right: 52vh;
 }
 
 .tb6 {
@@ -167,13 +178,18 @@ a {
     justify-content: center;
     align-items: center; 
     border: black solid;
+    margin-left: 53vh;
 }
 
 .tb7 {
     grid-area: tb7;
     background-color: aqua;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center; 
     border: black solid;
+    margin-right: 52vh;
 }
+
+/*------- fin de TABLA-------*/
