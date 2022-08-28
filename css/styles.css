@@ -91,3 +91,47 @@ a {
                          "tb6 tb7 tb7"
                          "videoIndex videoIndex videoIndex";
 }
+
+.imgIndex1 {
+    grid-area: imgIndex1;
+}
+
+.imgIndex2 {
+    grid-area: imgIndex2;
+}
+
+.imgIndex3 {
+    grid-area: imgIndex3;
+}
+
+.loremIndex {
+    grid-area: loremIndex;
+}
+
+.tb1 {
+    grid-area: tb1;
+}
+
+.tb2 {
+    grid-area: tb2;
+}
+
+.tb3 {
+    grid-area: tb3;
+}
+
+.tb4 {
+    grid-area: tb4;
+}
+
+.tb5 {
+    grid-area: tb5;
+}
+
+.tb6 {
+    grid-area: tb6;
+}
+
+.tb7 {
+    grid-area: tb7;
+}
