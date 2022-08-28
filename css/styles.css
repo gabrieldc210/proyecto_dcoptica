@@ -94,14 +94,23 @@ a {
 
 .imgIndex1 {
     grid-area: imgIndex1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .imgIndex2 {
     grid-area: imgIndex2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .imgIndex3 {
-    grid-area: imgIndex3; 
+    grid-area: imgIndex3;
+    display: flex;
+    justify-content: center;
+    align-items: center; 
 }
 
 .loremIndex {
