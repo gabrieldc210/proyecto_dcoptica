@@ -82,7 +82,7 @@ a {
 .mainIndex {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 40vh 10vh 6% 6% 9% 9% 34.7%;
+    grid-template-rows: 40vh 10vh 6% 6% 9% 9% 43%;
     grid-template-areas: "imgIndex1 imgIndex2 imgIndex3"
                          "loremIndex loremIndex loremIndex"
                          "tb1 tb1 tb1"
@@ -199,4 +199,5 @@ a {
 .videoIndex {
     grid-area: videoIndex;
     text-align: center;
+    margin-top: 20px;
 }
