@@ -112,39 +112,68 @@ a {
 
 .loremIndex {
     grid-area: loremIndex;
+    text-align: center;
 }
 
-.tb1 {
+.tb1 {                    
     grid-area: tb1;
     background-color: aqua;
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    border: black solid;
 }
 
 .tb2 {
     grid-area: tb2;
     background-color: aqua;
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    border: black solid;
 }
 
 .tb3 {
     grid-area: tb3;
     background-color: aqua;
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    border: black solid;
 }
 
 .tb4 {
     grid-area: tb4;
     background-color: aqua;
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    border: black solid;
 }
 
 .tb5 {
     grid-area: tb5;
     background-color: aqua;
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    border: black solid;
 }
 
 .tb6 {
     grid-area: tb6;
     background-color: aqua;
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    border: black solid;
 }
 
 .tb7 {
     grid-area: tb7;
     background-color: aqua;
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    border: black solid;
 }
