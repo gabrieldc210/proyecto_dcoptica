@@ -1,5 +1,5 @@
 body {
-   /*  background-image: url("../imagen/glass.jpg"); */
+    background-image: url("../imagen/glass.jpg"); 
     background-size: cover;
     display: block;
 }
@@ -9,16 +9,6 @@ body {
     padding: 0;
     box-sizing: border-box;
 }
-
-
-/* .bordeDelcontenedor {
-    position: fixed;
-    top: 0;
-    border: 1.5px solid rgba(184, 170, 170, 0.68);
-    background-color: rgb(238, 242, 241);
-    width: 100%;
-    z-index: 5;
-} */
 
 .editarDc {
     color: black;
@@ -238,4 +228,97 @@ a {
     transition: ease 1s;
     left: 92%;
     
+}
+
+.headerLentes {
+    display: grid;
+    grid-template-columns: 1fr 8fr;
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas: "barraTituLentes barraTituLentes"
+                         "itemsLentes tituloLentes";
+}
+
+.barraTituLentes {
+    grid-area: barraTituLentes;
+    background-color: rgb(238, 242, 241);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.itemsLentes {
+    grid-area: itemsLentes;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.tituloLentes {
+    grid-area: tituloLentes;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.mainLentes {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    grid-template-areas: "imgLentes1 imgLentes1 imgLentes1 imgLentes1"
+        ". loremLentes loremLentes loremLentes"
+        "imgLentes2 imgLentes3 imgLentes4 imgLentes5"
+        "imgLentes6 imgLentes7 imgLentes8 imgLentes9";
+}
+
+.imgLentes1 {
+    grid-area: imgLentes1;
+}
+
+.loremLentes {
+    grid-area: loremLentes;
+}
+
+.imgLentes2 {
+    grid-area: imgLentes2;
+}
+
+.imgLentes3 {
+    grid-area: imgLentes3;
+}
+
+.imgLentes4 {
+    grid-area: imgLentes4;
+}
+
+.imgLentes5 {
+    grid-area: imgLentes5;
+}
+
+.imgLentes6 {
+    grid-area: imgLentes6;
+}
+
+.imgLentes7 {
+    grid-area: imgLentes7;
+}
+
+.imgLentes8 {
+    grid-area: imgLentes8;
+}
+
+.imgLentes9 {
+    grid-area: imgLentes9;
+}
+
+.footerLentes {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+    grid-template-areas: "footerLentes";
+}
+
+.footerLentes {
+    grid-area: footerLentes;
+    background-color: rgb(238, 242, 241);
+    text-align: center;
 }
