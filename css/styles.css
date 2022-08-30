@@ -37,10 +37,12 @@ a {
     border-radius: 15px;
 }
 
+/* ---- INDEX ---- */
+
 .headerIndex {
     display: grid;
     grid-template-columns: 1fr 8fr;
-    grid-template-rows: 13vh 110px;
+    grid-template-rows: 1fr .9fr;
     grid-template-areas: "barraTituIndex barraTituIndex"
                         "itemsIndex tituloIndex";
 }
@@ -72,7 +74,7 @@ a {
 .mainIndex {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: .5fr .1fr .2fr .2fr .2fr .2fr 1fr;
+    grid-template-rows: .7fr .1fr .1fr .1fr .1fr .1fr 1fr;
     grid-template-areas: "imgIndex1 imgIndex2 imgIndex3"
                          "loremIndex loremIndex loremIndex"
                          "tb1 tb1 tb1"
@@ -184,7 +186,7 @@ a {
     margin-right: 52vh;
 }
 
-/*------- fin de TABLA-------*/
+/*------- FIN DE TABLA-------*/
 
 .videoIndex {
     grid-area: videoIndex;
@@ -207,6 +209,417 @@ a {
     text-align: center;
 }
 
+/*  ---- LENTES DE CONTACTO ---- */
+
+.headerLentes {
+    display: grid;
+    grid-template-columns: 1.2fr 8fr;
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas: "barraTituLentes barraTituLentes"
+                         "itemsLentes tituloLentes";
+}
+
+.barraTituLentes {
+    grid-area: barraTituLentes;
+    background-color: rgb(238, 242, 241);
+    position: fixed;
+    top: 0;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.itemsLentes {
+    grid-area: itemsLentes;
+    margin-left: 8px;
+    margin-top: 5px;
+    
+}
+
+.tituloLentes {
+    grid-area: tituloLentes;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.mainLentes {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr .2fr 1fr 1.5fr;
+    grid-template-areas: "imgLentes1 imgLentes1 imgLentes1 imgLentes1"
+        "loremLentes loremLentes loremLentes loremLentes"
+        "imgLentes2 imgLentes3 imgLentes4 imgLentes5"
+        "imgLentes6 imgLentes7 imgLentes8 imgLentes9";
+}
+
+.imgLentes1 {
+    grid-area: imgLentes1;
+    text-align: center;
+}
+
+.loremLentes {
+    grid-area: loremLentes;
+    text-align: center;
+}
+
+.imgLentes2 {
+    grid-area: imgLentes2;
+    display: flex;
+    justify-self: center;
+}
+
+.imgLentes3 {
+    grid-area: imgLentes3;
+    display: flex;
+    justify-self: center;
+}
+
+.imgLentes4 {
+    grid-area: imgLentes4;
+    display: flex;
+    justify-self: center;
+}
+
+.imgLentes5 {
+    grid-area: imgLentes5;
+    display: flex;
+    justify-self: center;
+}
+
+.imgLentes6 {
+    grid-area: imgLentes6;
+    display: flex;
+    justify-self: center;
+    margin-top: 30%;
+}
+
+.imgLentes7 {
+    grid-area: imgLentes7;
+    display: flex;
+    justify-self: center;
+    margin-top: 30%;
+}
+
+.imgLentes8 {
+    grid-area: imgLentes8;
+    display: flex;
+    justify-self: center;
+    margin-top: 30%;
+}
+
+.imgLentes9 {
+    grid-area: imgLentes9;
+    display: flex;
+    justify-self: center;
+    margin-top: 30%;
+}
+
+.footerLentes {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+    grid-template-areas: "footerLentes";
+}
+
+.footerLentes {
+    grid-area: footerLentes;
+    background-color: rgb(238, 242, 241);
+    text-align: center;
+}
+
+/*  ---- CONTACTO ---- */
+
+.headerContacto {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas: "barraContacto"
+                         "itemsContacto";
+}
+
+.barraContacto {
+    grid-area: barraContacto;
+    background-color: rgb(238, 242, 241);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.itemsContacto {
+    grid-area: itemsContacto;
+    margin-left: 5px;
+    width: 25vh;
+}
+
+.formContacto {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+    grid-template-areas: "form";
+}
+
+.form {
+    grid-area: form;
+    margin-left: 3vh;
+    border-radius: 0px 10px 39px 22px;
+    border: 3px solid rgba(7, 6, 6, 0.338);
+    width: 30em;
+    height: 20em;
+}
+
+.footerContacto {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+    grid-template-areas: "footerReceta";
+}
+
+
+.footerContacto {
+    grid-area: footerContacto;
+    text-align: center;
+    background-color: rgb(238, 242, 241);
+}
+
+/*  ---- ANTEOJOS DE SOL ---- */
+
+.headerSol {
+    display: grid;
+    grid-template-columns: 1.2fr 8fr;
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas: "barraSol barraSol"
+                         "itemsSol tituloSol";
+}
+
+.barraSol {
+    grid-area: barraSol;
+    background-color: rgb(238, 242, 241);
+    position: fixed;
+    top: 0;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.itemsSol {
+    grid-area: itemsSol;
+    margin-left: 8px;
+    margin-top: 5px;
+}
+
+.tituloSol {
+    grid-area: tituloSol;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.mainSol {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr .2fr 1fr 1.5fr;
+    grid-template-areas: "imgSol1 imgSol1 imgSol1 imgSol1"
+        "loremSol loremSol loremSol loremSol"
+        "imgSol2 imgSol3 imgSol4 imgSol5"
+        "imgSol6 imgSol7 imgSol8 imgSol9";
+}
+
+.imgSol1 {
+    grid-area: imgSol1;
+    text-align: center
+}
+
+.loremSol {
+    grid-area: loremSol;
+    text-align: center;
+}
+
+.imgSol2 {
+    grid-area: imgSol2;
+    display: flex;
+    justify-self: center;
+}
+
+.imgSol3 {
+    grid-area: imgSol3;
+    display: flex;
+    justify-self: center;
+}
+
+.imgSol4 {
+    grid-area: imgSol4;
+    display: flex;
+    justify-self: center;
+}
+
+.imgSol5 {
+    grid-area: imgSol5;
+    display: flex;
+    justify-self: center;
+}
+
+.imgSol6 {
+    grid-area: imgSol6;
+    display: flex;
+    justify-self: center;
+    margin-top: 30%;
+}
+
+.imgSol7 {
+    grid-area: imgSol7;
+    display: flex;
+    justify-self: center;
+    margin-top: 30%;
+}
+
+.imgSol8 {
+    grid-area: imgSol8;
+    display: flex;
+    justify-self: center;
+    margin-top: 30%;
+}
+
+.imgSol9 {
+    grid-area: imgSol9;
+    display: flex;
+    justify-self: center;
+    margin-top: 30%;
+}
+
+.footerSol {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+    grid-template-areas: "footerSol";
+}
+
+.footerSol {
+    grid-area: footerSol;
+    background-color: rgb(238, 242, 241);
+    text-align: center;
+}
+
+/*  ---- ANTEOJOS DE RECETA ---- */
+
+.headerReceta {
+    display: grid;
+    grid-template-columns: 1fr 8fr;
+    grid-template-rows: 1.2fr 1fr;
+    grid-template-areas: "barraReceta barraReceta"
+                         "itemsReceta tituloReceta";
+}
+
+.barraReceta {
+    grid-area: barraReceta;
+    background-color: rgb(238, 242, 241);
+    position: fixed;
+    top: 0;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.itemsReceta {
+    grid-area: itemsReceta;
+    margin-left: 8px;
+    margin-top: 5px;
+}
+
+.tituloReceta {
+    grid-area: tituloReceta;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.mainReceta {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr .2fr 1fr 1.5fr;
+    grid-template-areas: "imgReceta1 imgReceta1 imgReceta1 imgReceta1"
+        "loremReceta loremReceta loremReceta loremReceta"
+        "imgReceta2 imgReceta3 imgReceta4 imgReceta5"
+        "imgReceta6 imgReceta7 imgReceta8 imgReceta9";
+}
+
+.imgReceta1 {
+    grid-area: imgReceta1;
+    text-align: center;
+}
+
+.loremReceta {
+    grid-area: loremReceta;
+    text-align: center;
+    text-align: center;
+}
+
+.imgReceta2 {
+    grid-area: imgReceta2;
+    display: flex;
+    justify-self: center;
+}
+
+.imgReceta3 {
+    grid-area: imgReceta3;
+    display: flex;
+    justify-self: center;
+}
+
+.imgReceta4 {
+    grid-area: imgReceta4;
+    display: flex;
+    justify-self: center;
+}
+
+.imgReceta5 {
+    grid-area: imgReceta5;
+    display: flex;
+    justify-self: center;
+}
+
+.imgReceta6 {
+    grid-area: imgReceta6;
+    justify-self: center;
+    margin-top: 30%;
+}
+
+.imgReceta7 {
+    grid-area: imgReceta7;
+    justify-self: center;
+    margin-top: 30%;
+}
+
+.imgReceta8 {
+    grid-area: imgReceta8;
+    justify-self: center;
+    margin-top: 30%;
+}
+
+.imgReceta9 {
+    grid-area: imgReceta9;
+    justify-self: center;
+    margin-top: 30%;
+}
+
+.footerReceta {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+    grid-template-areas: "footerReceta";
+}
+
+.footerReceta {
+    grid-area: footerReceta;
+    background-color: rgb(238, 242, 241);
+    text-align: center;
+}
+
+/*  ---- ICONO DE WHATSAPP ---- */
+
 .container {
     background-color: #2e6329;
     border: 1px solid #fff;
@@ -226,99 +639,431 @@ a {
 .boton{
     width: 80px;
     transition: ease 1s;
-    left: 92%;
+    left: 91%;
+}
+
+@media only screen and (max-width: 1024px) {
+
+    /* ---- INDEX ---- */
+
+    .boton{
+        width: 80px;
+        transition: ease 1s;
+        left: 89%;
+    }
+
+     /* ---- LENTES DE CONTACTO ---- */
+
+    .headerLentes {
+        grid-template-columns: 1.8fr 8fr;
+    }
+
+    .mainLentes {
+        grid-template-rows: 1.5fr .2fr 1fr 1.5fr;
+    }
+
+    .imgLentes1 {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    /* ----ANTEOJOS DE SOL ---- */
+
+    .headerSol {
+        grid-template-columns: 1.8fr 8fr;
+    }
+
+    .mainSol {
+        grid-template-rows: 1.5fr .2fr 1fr 1.5fr;
+    }
+
+    .imgSol1 {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    /* ----ANTEOJOS DE RECETA ---- */
+
+    .headerReceta {
+        grid-template-columns: 1.8fr 8fr;
+    }
+
+    .mainReceta {
+        grid-template-rows: 1.5fr .2fr 1fr 1.5fr;
+    }
+
+    .imgReceta1 {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+}
+
+@media only screen and (max-width: 800px) {
+
+    /* ---- INDEX ---- */
+
+       .headerIndex {
+        grid-template-columns: 1.7fr 8fr;
+        grid-template-rows: .9fr 1fr;
+    }
+
+    .mainIndex {
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: .5fr .6fr .2fr .1fr .1fr .1fr .1fr 1fr;
+        grid-template-areas: "imgIndex1 imgIndex2"
+                             "imgIndex3 imgIndex3"
+                             "loremIndex loremIndex"
+                             "tb1 tb1 "
+                             "tb2 tb3"
+                             "tb4 tb5"
+                             "tb6 tb7"
+                             "videoIndex videoIndex";
+    }
+
+    .tituloIndex {
+        flex-wrap: wrap;
+    }
+
+    .tb1 {                    
+        margin-right: 32vh;
+        margin-left: 33vh;
+    }
     
+    .tb2,
+    .tb4,
+    .tb6 {
+        margin-left: 33vh;
+    }
+    
+    .tb3,
+    .tb5,
+    .tb7 {
+        margin-right: 32vh;
+    }
+
+    .videoIndex {
+       margin-top: 5vh;
+       display: flex;
+       justify-content: center;
+       flex-wrap: wrap;  
+    }
+
+    .boton{
+        width: 60px;
+        left: 88%;
+    }
+
+    /* ---- LENTES DE CONTACTO ---- */
+
+    .headerLentes {
+        grid-template-columns: 2fr 8fr;
+        grid-template-rows: 1fr 1fr;
+    }
+
+    .mainLentes {
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 0.3fr 1.5fr 1.5fr 1.5fr 1fr;
+        grid-template-areas: "imgLentes1 imgLentes1"
+                             "loremLentes loremLentes"
+                             "imgLentes2 imgLentes3" 
+                             "imgLentes4 imgLentes5"
+                             "imgLentes6 imgLentes7" 
+                             "imgLentes8 imgLentes9";
+    }
+
+    .imgLentes1 {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    .imgLentes2 {
+        grid-area: imgLentes2;
+        display: flex;
+        justify-self: center;
+    }
+    
+    .imgLentes3 {
+        grid-area: imgLentes3;
+        display: flex;
+        justify-self: center;
+    }
+    
+    .imgLentes4 {
+        grid-area: imgLentes4;
+        display: flex;
+        justify-self: center;
+    }
+    
+    .imgLentes5 {
+        grid-area: imgLentes5;
+        display: flex;
+        justify-self: center;
+    }
+    
+    .imgLentes6 {
+        margin-top: 0;
+    }
+    
+    .imgLentes7 {
+        margin-top: 0;
+    }
+    
+    .imgLentes8 {
+        margin-top: 0;
+    }
+    
+    .imgLentes9 {
+        margin-top: 0;
+    }
+
+    /*  ---- ANTEOJOS DE SOL ---- */
+
+    .mainSol {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 0.3fr 1.5fr 1.5fr 1.5fr 1fr;
+        grid-template-areas:"imgSol1 imgSol1"
+                            "loremSol loremSol"
+                            "imgSol2 imgSol3" 
+                            "imgSol4 imgSol5"
+                            "imgSol6 imgSol7" 
+                            "imgSol8 imgSol9";
+    }
+
+    .imgSol1 {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    .imgSol2,
+    .imgSol3,
+    .imgSol4,
+    .imgSol5 {
+        display: flex;
+        justify-self: center;
+    }
+    
+    .imgSol6,
+    .imgSol7,
+    .imgSol8,
+    .imgSol9 {
+        margin-top: 0;
+    }
+
+    /* ----ANTEOJO DE RECETA ---- */
+
+    .mainReceta {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 0.3fr 1.5fr 1.5fr 1.5fr 1fr;
+        grid-template-areas:"imgReceta1 imgReceta1"
+                            "loremReceta loremReceta"
+                            "imgReceta2 imgReceta3" 
+                            "imgReceta4 imgReceta5"
+                            "imgReceta6 imgReceta7" 
+                            "imgReceta8 imgReceta9";
+    }
+
+    .imgReceta1 {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    .imgReceta2,
+    .imgReceta3,
+    .imgReceta4,
+    .imgReceta5 {
+        display: flex;
+        justify-self: center;
+    }
+    
+    .imgReceta6,
+    .imgReceta7,
+    .imgReceta8,
+    .imgReceta9 {
+        margin-top: 0;
+    }
 }
 
-.headerLentes {
-    display: grid;
-    grid-template-columns: 1fr 8fr;
-    grid-template-rows: 1fr 1fr;
-    grid-template-areas: "barraTituLentes barraTituLentes"
-                         "itemsLentes tituloLentes";
-}
+@media only screen and (max-width: 500px) {
 
-.barraTituLentes {
-    grid-area: barraTituLentes;
-    background-color: rgb(238, 242, 241);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
+    /* ---- INDEX ---- */
 
-.itemsLentes {
-    grid-area: itemsLentes;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
+    .editarDc {
+        font-size: 3em;
+    }
+    
+    .editarOptica {
+        font-size: 3em;
+    }
+    
+    .mainIndex {
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 3.5fr 3.5fr 3.5fr 1fr .1fr .1fr .1fr 1fr;
+        grid-template-areas: "imgIndex1 imgIndex1"
+                             "imgIndex2 imgIndex2"
+                             "imgIndex3 imgIndex3"
+                             "loremIndex loremIndex"
+                             "tb1 tb1 "
+                             "tb2 tb3"
+                             "tb4 tb5"
+                             "tb6 tb7"
+                             "videoIndex videoIndex";
+    }
 
-.tituloLentes {
-    grid-area: tituloLentes;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
+    .tb1 {
+        margin-right: 0;
+        margin-left: 0;
+    }
+    
+    .tb2,
+    .tb4,
+    .tb6 {
+        margin-left: 0;
+    }
+    
+    .tb3,
+    .tb5,
+    .tb7 {
+        margin-right: 0;
+    }        
 
-.mainLentes {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    grid-template-rows: 1fr 1fr 1fr 1fr;
-    grid-template-areas: "imgLentes1 imgLentes1 imgLentes1 imgLentes1"
-        ". loremLentes loremLentes loremLentes"
-        "imgLentes2 imgLentes3 imgLentes4 imgLentes5"
-        "imgLentes6 imgLentes7 imgLentes8 imgLentes9";
-}
+    .boton{
+        width: 48px;
+        left: 85%;
+        display: flex;
+        flex-wrap: wrap;
+    }
 
-.imgLentes1 {
-    grid-area: imgLentes1;
-}
+    /* ---- LENTES DE CONTACTO ---- */
 
-.loremLentes {
-    grid-area: loremLentes;
-}
+    .headerLentes {
+        display: grid;
+        grid-template-columns: 0.4fr 1fr;
+        grid-template-rows: 1fr 1fr;
+    }
 
-.imgLentes2 {
-    grid-area: imgLentes2;
-}
+    .mainLentes {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 20vh 1fr 40vh 40vh 40vh 40vh 40vh 40vh 40vh 30vh;
+        grid-template-areas:"imgLentes1"
+                            "loremLentes"
+                            "imgLentes2" 
+                            "imgLentes3" 
+                            "imgLentes4" 
+                            "imgLentes5"
+                            "imgLentes6" 
+                            "imgLentes7" 
+                            "imgLentes8" 
+                            "imgLentes9";
+    }
 
-.imgLentes3 {
-    grid-area: imgLentes3;
-}
+    
+    .imgLentes2,
+    .imgLentes3,
+    .imgLentes4,
+    .imgLentes5 {
+        align-self: center;
+    }
 
-.imgLentes4 {
-    grid-area: imgLentes4;
-}
+    .imgLentes6,
+    .imgLentes7,
+    .imgLentes8,
+    .imgLentes9 {    
+        margin-top: 0%;
+        align-self: center;
+    }
 
-.imgLentes5 {
-    grid-area: imgLentes5;
-}
+    /*  ---- CONTACTO ---- */
 
-.imgLentes6 {
-    grid-area: imgLentes6;
-}
+    .form {
+        width: 18em;
+    }
 
-.imgLentes7 {
-    grid-area: imgLentes7;
-}
+    /*  ----ANTEOJOS DE SOL ---- */
 
-.imgLentes8 {
-    grid-area: imgLentes8;
-}
+    .headerSol {
+        display: grid;
+        grid-template-columns: 0.4fr 1fr;
+        grid-template-rows: 1fr 1fr;
+    }
 
-.imgLentes9 {
-    grid-area: imgLentes9;
-}
+    .mainSol {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 20vh 1fr 40vh 40vh 40vh 40vh 40vh 40vh 40vh 30vh;
+        grid-template-areas:"imgSol1"
+                            "loremSol"
+                            "imgSol2" 
+                            "imgSol3" 
+                            "imgSol4" 
+                            "imgSol5"
+                            "imgSol6" 
+                            "imgSol7" 
+                            "imgSol8" 
+                            "imgSol9";
+    }
 
-.footerLentes {
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: 1fr;
-    grid-template-areas: "footerLentes";
-}
 
-.footerLentes {
-    grid-area: footerLentes;
-    background-color: rgb(238, 242, 241);
-    text-align: center;
+    .imgSol2,
+    .imgSol3,
+    .imgSol4,
+    .imgSol5 {
+    align-self: center;
+    }
+
+    .imgSol6,
+    .imgSol7,
+    .imgSol8,
+    .imgSol9 {    
+    margin-top: 0%;
+    align-self: center;
+    }
+
+    /* ----ANTEOJOS DE RECETA ---- */
+    .headerReceta {
+        display: grid;
+        grid-template-columns: 0.4fr 1fr;
+        grid-template-rows: 1fr 1fr;
+    }
+
+    .mainReceta {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 20vh 1fr 40vh 40vh 40vh 40vh 40vh 40vh 40vh 30vh;
+        grid-template-areas:"imgReceta1"
+                            "loremReceta"
+                            "imgReceta2" 
+                            "imgReceta3" 
+                            "imgReceta4" 
+                            "imgReceta5"
+                            "imgReceta6" 
+                            "imgReceta7" 
+                            "imgReceta8" 
+                            "imgReceta9";
+    }
+
+    
+    .imgReceta2,
+    .imgReceta3,
+    .imgReceta4,
+    .imgReceta5 {
+        align-self: center;
+    }
+
+    .imgReceta6,
+    .imgReceta7,
+    .imgReceta8,
+    .imgReceta9 {    
+        margin-top: 0%;
+        align-self: center;
+    }
+
 }
