@@ -664,6 +664,8 @@ a {
     display: flex;
     justify-content: center;
     align-items: center;
+    position: relative;
+    right: 10vh;
 }
 
 .mainSol {
@@ -1122,7 +1124,7 @@ a {
     /*  ---- ANTEOJOS DE SOL ---- */
 
     .headerSol {
-        grid-template-rows: .8fr 1fr;
+        grid-template-rows: 1fr 1fr;
     }
 
     .mainSol {
@@ -1299,6 +1301,10 @@ a {
         display: grid;
         grid-template-columns: 0.4fr 1fr;
         grid-template-rows: .9fr 1fr;
+    }
+
+    .tituloSol {
+        right: 0;
     }
 
     .mainSol {
