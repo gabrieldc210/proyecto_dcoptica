@@ -111,20 +111,179 @@ a {
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-wrap: wrap;
+/*     width: 100%;
+    height: 100vh; */
+}
+
+.imgIndex1 figure {
+    position: relative;
+    height: 230px;
+    width: 230px;
+    overflow: hidden;
+    border-radius: 6px;
+    box-shadow: 0px 15px 25px rgba(0, 0, 0, 0.50);
+}
+
+.imgIndex1 figure img1 {
+    transition: all 500ms ease-out;
+}
+
+.imgIndex1 figure .capa {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(11,103,123,0.6);
+    opacity: 0;
+    visibility: hidden;
+    text-align: center;
+}
+.imgIndex1 figure:hover > .capa {
+    opacity: 1;
+    visibility: visible;
+}
+
+.imgIndex1 figure:hover > .capa h3 {
+    margin-top: 70px;
+    margin-bottom: 15px;
+}
+
+.imgIndex1 figure .capa h3 {
+    color: white;
+    font-weight: 400;
+    margin-bottom: 120px;
+    transition: all 500ms ease-out;
+    margin-top: 30px;
+}
+
+.imgIndex1 figure .capa p {
+    color: white;
+    font-size: 15px;
+    line-height: 1.5;
+    width: 100%;
+    max-width: 220px;
+    margin: auto;
 }
 
 .imgIndex2 {
     grid-area: imgIndex2;
     display: flex;
+    flex-wrap: wrap;
     justify-content: center;
     align-items: center;
+/*     width: 100%;
+    height: 100vh; */
+}
+
+.imgIndex2 figure {
+    position: relative;
+    height: 230px;
+    width: 230px;
+    overflow: hidden;
+    border-radius: 6px;
+    box-shadow: 0px 15px 25px rgba(0, 0, 0, 0.50);
+}
+
+.imgIndex2 figure img2 {
+    transition: all 500ms ease-out;
+}
+
+.imgIndex2 figure .capa2 {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(11,103,123,0.6);
+    opacity: 0;
+    visibility: hidden;
+    text-align: center;
+}
+.imgIndex2 figure:hover > .capa2 {
+    opacity: 1;
+    visibility: visible;
+}
+
+.imgIndex2 figure:hover > .capa2 h3 {
+    margin-top: 70px;
+    margin-bottom: 15px;
+}
+
+.imgIndex2 figure .capa2 h3 {
+    color: white;
+    font-weight: 400;
+    margin-bottom: 120px;
+    transition: all 500ms ease-out;
+    margin-top: 30px;
+}
+
+.imgIndex2 figure .capa2 p {
+    color: white;
+    font-size: 15px;
+    line-height: 1.5;
+    width: 100%;
+    max-width: 220px;
+    margin: auto;
 }
 
 .imgIndex3 {
     grid-area: imgIndex3;
     display: flex;
+    flex-wrap: wrap;
     justify-content: center;
     align-items: center;
+/*     width: 100%;
+    height: 100vh; */
+}
+
+.imgIndex3 figure {
+    position: relative;
+    height: 230px;
+    width: 230px;
+    overflow: hidden;
+    border-radius: 6px;
+    box-shadow: 0px 15px 25px rgba(0, 0, 0, 0.50);
+}
+
+.imgIndex3 figure img3 {
+    transition: all 500ms ease-out;
+}
+
+.imgIndex3 figure .capa3 {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(11,103,123,0.6);
+    opacity: 0;
+    visibility: hidden;
+    text-align: center;
+}
+.imgIndex3 figure:hover > .capa3 {
+    opacity: 1;
+    visibility: visible;
+}
+
+.imgIndex3 figure:hover > .capa3 h3 {
+    margin-top: 70px;
+    margin-bottom: 15px;
+}
+
+.imgIndex3 figure .capa3 h3 {
+    color: white;
+    font-weight: 400;
+    margin-bottom: 120px;
+    transition: all 500ms ease-out;
+    margin-top: 30px;
+}
+
+.imgIndex3 figure .capa3 p {
+    color: white;
+    font-size: 15px;
+    line-height: 1.5;
+    width: 100%;
+    max-width: 220px;
+    margin: auto;
 }
 
 .loremIndex {
