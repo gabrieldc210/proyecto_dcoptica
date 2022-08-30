@@ -903,9 +903,9 @@ a {
     border-radius: 50%;
     bottom: 20px;
     transition: ease 1.3s;
-    animation: efecto 1s infinite;
+    animation: efecto 1s normal;
     animation-name: cambiarColor;
-    animation-duration: 3s;
+    animation-duration: 6s;
 }
 
 @keyframes cambiarColor {
@@ -913,13 +913,13 @@ a {
         transform: scale(1);
     }
     20% {
-        transform: scale(.3);
+        transform: scale(1.3);
     }
     50% {
-        transform: scale(.6);
+        transform: scale(1.6);
     }
     80% {
-        transform: scale(.9);
+        transform: scale(1.9);
     }
     100%{
         transform: scale(1);
@@ -940,6 +940,10 @@ a {
 @media only screen and (max-width: 1024px) {
 
     /* ---- INDEX ---- */
+
+    .headerIndex {
+        grid-template-rows: .8fr .9fr;
+    }
 
     .boton{
         width: 80px;
@@ -1007,7 +1011,7 @@ a {
 
     .mainIndex {
         grid-template-columns: 1fr 1fr;
-        grid-template-rows: .5fr .6fr .2fr .1fr .1fr .1fr .1fr 1fr;
+        grid-template-rows: 1fr 1fr .2fr .1fr .1fr .1fr .1fr 1fr;
         grid-template-areas: "imgIndex1 imgIndex2"
                              "imgIndex3 imgIndex3"
                              "loremIndex loremIndex"
@@ -1117,6 +1121,10 @@ a {
 
     /*  ---- ANTEOJOS DE SOL ---- */
 
+    .headerSol {
+        grid-template-rows: .8fr 1fr;
+    }
+
     .mainSol {
         display: grid;
         grid-template-columns: 1fr 1fr;
@@ -1197,10 +1205,14 @@ a {
     .editarOptica {
         font-size: 3em;
     }
+
+    .headerIndex {
+        grid-template-rows: .7fr .9fr;
+    }
     
     .mainIndex {
         grid-template-columns: 1fr 1fr;
-        grid-template-rows: 3.5fr 3.5fr 3.5fr 1fr .1fr .1fr .1fr 1fr;
+        grid-template-rows:  1fr 1fr 1fr .1fr .1fr .1fr .1fr .1fr 1fr;
         grid-template-areas: "imgIndex1 imgIndex1"
                              "imgIndex2 imgIndex2"
                              "imgIndex3 imgIndex3"
@@ -1231,7 +1243,7 @@ a {
 
     .boton{
         width: 48px;
-        left: 85%;
+        left: 83%;
         display: flex;
         flex-wrap: wrap;
     }
@@ -1286,7 +1298,7 @@ a {
     .headerSol {
         display: grid;
         grid-template-columns: 0.4fr 1fr;
-        grid-template-rows: 1fr 1fr;
+        grid-template-rows: .9fr 1fr;
     }
 
     .mainSol {
