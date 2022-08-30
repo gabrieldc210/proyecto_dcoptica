@@ -62,8 +62,30 @@ a {
     display: flex;
     justify-content: center;
     align-items: center;
+    animation: menu_animado;
+    animation-duration: 5s;
+    animation-delay: 3s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
 }
 
+@keyframes menu_animado {
+    0% {
+        
+    }
+    25%{
+        
+    }
+    50%{
+
+    }
+    75%{
+      
+    }
+    100%{
+        background-color: #22c1c3;
+    }
+}
 .tituloIndex {
     grid-area: tituloIndex;
     display: flex;
@@ -234,7 +256,29 @@ a {
     grid-area: itemsLentes;
     margin-left: 8px;
     margin-top: 5px;
+    animation: menu_animado;
+    animation-duration: 5s;
+    animation-delay: 3s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+    }
+
+    @keyframes menu_animado {
+    0% {
+        
+    }
+    25%{
+        
+    }
+    50%{
+
+    }
+    75%{
     
+    }
+    100%{
+        background-color: #22c1c3;
+    }
 }
 
 .tituloLentes {
@@ -351,7 +395,30 @@ a {
     grid-area: itemsContacto;
     margin-left: 5px;
     width: 25vh;
-}
+    animation: menu_animado;
+    animation-duration: 5s;
+    animation-delay: 3s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+    }
+    
+    @keyframes menu_animado {
+    0% {
+        
+    }
+    25%{
+        
+    }
+    50%{
+    
+    }
+    75%{
+      
+    }
+    100%{
+        background-color: #22c1c3;
+    }
+    }
 
 .formContacto {
     display: grid;
@@ -408,6 +475,29 @@ a {
     grid-area: itemsSol;
     margin-left: 8px;
     margin-top: 5px;
+    animation: menu_animado;
+    animation-duration: 5s;
+    animation-delay: 3s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+    }
+
+    @keyframes menu_animado {
+    0% {
+        
+    }
+    25%{
+        
+    }
+    50%{
+
+    }
+    75%{
+    
+    }
+    100%{
+        background-color: #22c1c3;
+    }
 }
 
 .tituloSol {
@@ -527,7 +617,30 @@ a {
     grid-area: itemsReceta;
     margin-left: 8px;
     margin-top: 5px;
-}
+    animation: menu_animado;
+    animation-duration: 5s;
+    animation-delay: 3s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+    }
+    
+    @keyframes menu_animado {
+    0% {
+        
+    }
+    25%{
+        
+    }
+    50%{
+    
+    }
+    75%{
+      
+    }
+    100%{
+        background-color: #22c1c3;
+    }
+    }
 
 .tituloReceta {
     grid-area: tituloReceta;
@@ -964,7 +1077,6 @@ a {
                             "imgLentes8" 
                             "imgLentes9";
     }
-
     
     .imgLentes2,
     .imgLentes3,
@@ -1011,7 +1123,6 @@ a {
                             "imgSol9";
     }
 
-
     .imgSol2,
     .imgSol3,
     .imgSol4,
@@ -1049,7 +1160,6 @@ a {
                             "imgReceta8" 
                             "imgReceta9";
     }
-
     
     .imgReceta2,
     .imgReceta3,
@@ -1065,5 +1175,4 @@ a {
         margin-top: 0%;
         align-self: center;
     }
-
 }
