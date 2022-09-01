@@ -1,0 +1,1378 @@
+body {
+    background-image: url("../imagen/glass.jpg"); 
+    background-size: cover;
+    display: block;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.editarDc {
+    color: black;
+    font-size: 4em;
+    font-family: 'Dosis', sans-serif;
+}
+
+.editarOptica {
+    color: #40E0D0;
+    font-size: 4em;
+    font-family: 'Oswald', sans-serif;
+}
+
+.centroContenido {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+a {
+    text-decoration: none;
+}
+
+.bordeDeli {
+    border: 1.5px solid rgba(184, 170, 170, 0.68);
+    border-radius: 15px;
+}
+
+/* ---- INDEX ---- */
+
+.headerIndex {
+    display: grid;
+    grid-template-columns: 1fr 8fr;
+    grid-template-rows: 1fr .9fr;
+    grid-template-areas: "barraTituIndex barraTituIndex"
+                        "itemsIndex tituloIndex";
+}
+
+.barraTituIndex {
+    grid-area: barraTituIndex;
+    position: fixed;
+    top: 0;
+    border: 1.5px solid rgba(184, 170, 170, 0.68);
+    background-image: linear-gradient(0deg, rgba(34,193,195,1) 0%, rgba(4,6,3,0.7235936610972514) 38%);
+    width: 100%;
+    z-index: 5;
+}
+
+.itemsIndex {
+    grid-area: itemsIndex;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    animation: menu_animado;
+    animation-duration: 5s;
+    animation-delay: 3s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+}
+
+@keyframes menu_animado {
+    0% {
+        
+    }
+    25%{
+        
+    }
+    50%{
+
+    }
+    75%{
+      
+    }
+    100%{
+        background-color: #22c1c3;
+    }
+}
+.tituloIndex {
+    grid-area: tituloIndex;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.mainIndex {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: .7fr .1fr .1fr .1fr .1fr .1fr 1fr;
+    grid-template-areas: "imgIndex1 imgIndex2 imgIndex3"
+                         "loremIndex loremIndex loremIndex"
+                         "tb1 tb1 tb1"
+                         "tb2 tb3 tb3"
+                         "tb4 tb5 tb5"
+                         "tb6 tb7 tb7"
+                         "videoIndex videoIndex videoIndex";
+}
+
+.imgIndex1 {
+    grid-area: imgIndex1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.imgIndex1 figure {
+    position: relative;
+    height: 230px;
+    width: 230px;
+    overflow: hidden;
+    border-radius: 6px;
+    box-shadow: 0px 15px 25px rgba(0, 0, 0, 0.50);
+}
+
+.imgIndex1 figure img1 {
+    transition: all 500ms ease-out;
+}
+
+.imgIndex1 figure .capa {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(11,103,123,0.6);
+    opacity: 0;
+    visibility: hidden;
+    text-align: center;
+}
+.imgIndex1 figure:hover > .capa {
+    opacity: 1;
+    visibility: visible;
+}
+
+.imgIndex1 figure:hover > .capa h3 {
+    margin-top: 70px;
+    margin-bottom: 15px;
+}
+
+.imgIndex1 figure .capa h3 {
+    color: white;
+    font-weight: 400;
+    margin-bottom: 120px;
+    transition: all 500ms ease-out;
+    margin-top: 30px;
+}
+
+.imgIndex1 figure .capa p {
+    color: white;
+    font-size: 15px;
+    line-height: 1.5;
+    width: 100%;
+    max-width: 220px;
+    margin: auto;
+}
+
+.imgIndex2 {
+    grid-area: imgIndex2;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.imgIndex2 figure {
+    position: relative;
+    height: 230px;
+    width: 230px;
+    overflow: hidden;
+    border-radius: 6px;
+    box-shadow: 0px 15px 25px rgba(0, 0, 0, 0.50);
+}
+
+.imgIndex2 figure img2 {
+    transition: all 500ms ease-out;
+}
+
+.imgIndex2 figure .capa2 {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(11,103,123,0.6);
+    opacity: 0;
+    visibility: hidden;
+    text-align: center;
+}
+.imgIndex2 figure:hover > .capa2 {
+    opacity: 1;
+    visibility: visible;
+}
+
+.imgIndex2 figure:hover > .capa2 h3 {
+    margin-top: 70px;
+    margin-bottom: 15px;
+}
+
+.imgIndex2 figure .capa2 h3 {
+    color: white;
+    font-weight: 400;
+    margin-bottom: 120px;
+    transition: all 500ms ease-out;
+    margin-top: 30px;
+}
+
+.imgIndex2 figure .capa2 p {
+    color: white;
+    font-size: 15px;
+    line-height: 1.5;
+    width: 100%;
+    max-width: 220px;
+    margin: auto;
+}
+
+.imgIndex3 {
+    grid-area: imgIndex3;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.imgIndex3 figure {
+    position: relative;
+    height: 230px;
+    width: 230px;
+    overflow: hidden;
+    border-radius: 6px;
+    box-shadow: 0px 15px 25px rgba(0, 0, 0, 0.50);
+}
+
+.imgIndex3 figure img3 {
+    transition: all 500ms ease-out;
+}
+
+.imgIndex3 figure .capa3 {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(11,103,123,0.6);
+    opacity: 0;
+    visibility: hidden;
+    text-align: center;
+}
+.imgIndex3 figure:hover > .capa3 {
+    opacity: 1;
+    visibility: visible;
+}
+
+.imgIndex3 figure:hover > .capa3 h3 {
+    margin-top: 70px;
+    margin-bottom: 15px;
+}
+
+.imgIndex3 figure .capa3 h3 {
+    color: white;
+    font-weight: 400;
+    margin-bottom: 120px;
+    transition: all 500ms ease-out;
+    margin-top: 30px;
+}
+
+.imgIndex3 figure .capa3 p {
+    color: white;
+    font-size: 15px;
+    line-height: 1.5;
+    width: 100%;
+    max-width: 220px;
+    margin: auto;
+}
+
+.loremIndex {
+    grid-area: loremIndex;
+    text-align: center;
+}
+
+/*-------TABLA-------*/
+
+.tb1 {                    
+    grid-area: tb1;
+    background-color: aqua;
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    border: black solid;
+    margin-right: 52vh;
+    margin-left: 53vh;
+}
+
+.tb2 {
+    grid-area: tb2;
+    background-color: aqua;
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    border: black solid;
+    margin-left: 53vh;
+}
+
+.tb3 {
+    grid-area: tb3;
+    background-color: aqua;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; 
+    border: black solid;
+    margin-right: 52vh;
+}
+
+.tb4 {
+    grid-area: tb4;
+    background-color: aqua;
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    border: black solid;
+    margin-left: 53vh;
+}
+
+.tb5 {
+    grid-area: tb5;
+    background-color: aqua;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; 
+    border: black solid;
+    margin-right: 52vh;
+}
+
+.tb6 {
+    grid-area: tb6;
+    background-color: aqua;
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    border: black solid;
+    margin-left: 53vh;
+}
+
+.tb7 {
+    grid-area: tb7;
+    background-color: aqua;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; 
+    border: black solid;
+    margin-right: 52vh;
+}
+
+/*------- FIN DE TABLA-------*/
+
+.videoIndex {
+    grid-area: videoIndex;
+    text-align: center;
+   margin-top: 10vh;
+}
+
+
+
+.footerIndex {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+    grid-template-areas: "footerIndex";
+}
+
+.footerIndex {
+    grid-area: footerIndex;
+    border: 1.5px solid rgba(184, 170, 170, 0.68);
+    background-image: linear-gradient(0deg, rgba(34,193,195,1) 0%, rgba(4,6,3,0.7235936610972514) 38%);
+    text-align: center;
+}
+
+/*  ---- LENTES DE CONTACTO ---- */
+
+.headerLentes {
+    display: grid;
+    grid-template-columns: 1.2fr 8fr;
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas: "barraTituLentes barraTituLentes"
+                         "itemsLentes tituloLentes";
+}
+
+.barraTituLentes {
+    grid-area: barraTituLentes;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    border: 1.5px solid rgba(184, 170, 170, 0.68);
+    background-image: linear-gradient(0deg, rgba(34,193,195,1) 0%, rgba(4,6,3,0.7235936610972514) 38%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.itemsLentes {
+    grid-area: itemsLentes;
+    margin-left: 8px;
+    margin-top: 5px;
+    animation: menu_animado;
+    animation-duration: 5s;
+    animation-delay: 3s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+    }
+
+    @keyframes menu_animado {
+    0% {
+        
+    }
+    25%{
+        
+    }
+    50%{
+
+    }
+    75%{
+    
+    }
+    100%{
+        background-color: #22c1c3;
+    }
+}
+
+.tituloLentes {
+    grid-area: tituloLentes;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.mainLentes {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr .2fr 1fr 1.5fr;
+    grid-template-areas: "imgLentes1 imgLentes1 imgLentes1 imgLentes1"
+        "loremLentes loremLentes loremLentes loremLentes"
+        "imgLentes2 imgLentes3 imgLentes4 imgLentes5"
+        "imgLentes6 imgLentes7 imgLentes8 imgLentes9";
+}
+
+.imgLentes1 {
+    grid-area: imgLentes1;
+    text-align: center;
+}
+
+.loremLentes {
+    grid-area: loremLentes;
+    text-align: center;
+}
+
+.imgLentes2 {
+    grid-area: imgLentes2;
+    display: flex;
+    justify-self: center;
+}
+
+.imgLentes3 {
+    grid-area: imgLentes3;
+    display: flex;
+    justify-self: center;
+}
+
+.imgLentes4 {
+    grid-area: imgLentes4;
+    display: flex;
+    justify-self: center;
+}
+
+.imgLentes5 {
+    grid-area: imgLentes5;
+    display: flex;
+    justify-self: center;
+}
+
+.imgLentes6 {
+    grid-area: imgLentes6;
+    display: flex;
+    justify-self: center;
+    margin-top: 30%;
+}
+
+.imgLentes7 {
+    grid-area: imgLentes7;
+    display: flex;
+    justify-self: center;
+    margin-top: 30%;
+}
+
+.imgLentes8 {
+    grid-area: imgLentes8;
+    display: flex;
+    justify-self: center;
+    margin-top: 30%;
+}
+
+.imgLentes9 {
+    grid-area: imgLentes9;
+    display: flex;
+    justify-self: center;
+    margin-top: 30%;
+}
+
+.footerLentes {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+    grid-template-areas: "footerLentes";
+}
+
+.footerLentes {
+    grid-area: footerLentes;
+    border: 1.5px solid rgba(184, 170, 170, 0.68);
+    background-image: linear-gradient(0deg, rgba(34,193,195,1) 0%, rgba(4,6,3,0.7235936610972514) 38%);
+    text-align: center;
+}
+
+/*  ---- CONTACTO ---- */
+
+.headerContacto {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas: "barraContacto"
+                         "itemsContacto";
+}
+
+.barraContacto {
+    grid-area: barraContacto;
+    border: 1.5px solid rgba(184, 170, 170, 0.68);
+    background-image: linear-gradient(0deg, rgba(34,193,195,1) 0%, rgba(4,6,3,0.7235936610972514) 38%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.itemsContacto {
+    grid-area: itemsContacto;
+    margin-left: 5px;
+    width: 25vh;
+    animation: menu_animado;
+    animation-duration: 5s;
+    animation-delay: 3s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+    }
+    
+    @keyframes menu_animado {
+    0% {
+        
+    }
+    25%{
+        
+    }
+    50%{
+    
+    }
+    75%{
+      
+    }
+    100%{
+        background-color: #22c1c3;
+    }
+    }
+
+.formContacto {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+    grid-template-areas: "form";
+}
+
+.form {
+    grid-area: form;
+    margin-left: 3vh;
+    border-radius: 0px 10px 39px 22px;
+    border: 3px solid rgba(7, 6, 6, 0.338);
+    width: 30em;
+    height: 20em;
+}
+
+.footerContacto {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+    grid-template-areas: "footerReceta";
+}
+
+
+.footerContacto {
+    grid-area: footerContacto;
+    text-align: center;
+    border: 1.5px solid rgba(184, 170, 170, 0.68);
+    background-image: linear-gradient(0deg, rgba(34,193,195,1) 0%, rgba(4,6,3,0.7235936610972514) 38%);
+}
+
+/*  ---- ANTEOJOS DE SOL ---- */
+
+.headerSol {
+    display: grid;
+    grid-template-columns: 1.2fr 8fr;
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas: "barraSol barraSol"
+                         "itemsSol tituloSol";
+}
+
+.barraSol {
+    grid-area: barraSol;
+    border: 1.5px solid rgba(184, 170, 170, 0.68);
+    background-image: linear-gradient(0deg, rgba(34,193,195,1) 0%, rgba(4,6,3,0.7235936610972514) 38%);
+    position: fixed;
+    top: 0;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.itemsSol {
+    grid-area: itemsSol;
+    margin-left: 8px;
+    margin-top: 5px;
+    animation: menu_animado;
+    animation-duration: 5s;
+    animation-delay: 3s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+    }
+
+    @keyframes menu_animado {
+    0% {
+        
+    }
+    25%{
+        
+    }
+    50%{
+
+    }
+    75%{
+    
+    }
+    100%{
+        background-color: #22c1c3;
+    }
+}
+
+.tituloSol {
+    grid-area: tituloSol;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    right: 10vh;
+}
+
+.mainSol {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr .2fr 1fr 1.5fr;
+    grid-template-areas: "imgSol1 imgSol1 imgSol1 imgSol1"
+        "loremSol loremSol loremSol loremSol"
+        "imgSol2 imgSol3 imgSol4 imgSol5"
+        "imgSol6 imgSol7 imgSol8 imgSol9";
+}
+
+.imgSol1 {
+    grid-area: imgSol1;
+    text-align: center
+}
+
+.loremSol {
+    grid-area: loremSol;
+    text-align: center;
+}
+
+.imgSol2 {
+    grid-area: imgSol2;
+    display: flex;
+    justify-self: center;
+}
+
+.imgSol3 {
+    grid-area: imgSol3;
+    display: flex;
+    justify-self: center;
+}
+
+.imgSol4 {
+    grid-area: imgSol4;
+    display: flex;
+    justify-self: center;
+}
+
+.imgSol5 {
+    grid-area: imgSol5;
+    display: flex;
+    justify-self: center;
+}
+
+.imgSol6 {
+    grid-area: imgSol6;
+    display: flex;
+    justify-self: center;
+    margin-top: 30%;
+}
+
+.imgSol7 {
+    grid-area: imgSol7;
+    display: flex;
+    justify-self: center;
+    margin-top: 30%;
+}
+
+.imgSol8 {
+    grid-area: imgSol8;
+    display: flex;
+    justify-self: center;
+    margin-top: 30%;
+}
+
+.imgSol9 {
+    grid-area: imgSol9;
+    display: flex;
+    justify-self: center;
+    margin-top: 30%;
+}
+
+.footerSol {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+    grid-template-areas: "footerSol";
+}
+
+.footerSol {
+    grid-area: footerSol;
+    border: 1.5px solid rgba(184, 170, 170, 0.68);
+    background-image: linear-gradient(0deg, rgba(34,193,195,1) 0%, rgba(4,6,3,0.7235936610972514) 38%);
+    text-align: center;
+}
+
+/*  ---- ANTEOJOS DE RECETA ---- */
+
+.headerReceta {
+    display: grid;
+    grid-template-columns: 1fr 8fr;
+    grid-template-rows: 1.2fr 1fr;
+    grid-template-areas: "barraReceta barraReceta"
+                         "itemsReceta tituloReceta";
+}
+
+.barraReceta {
+    grid-area: barraReceta;
+    border: 1.5px solid rgba(184, 170, 170, 0.68);
+    background-image: linear-gradient(0deg, rgba(34,193,195,1) 0%, rgba(4,6,3,0.7235936610972514) 38%);
+    position: fixed;
+    top: 0;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.itemsReceta {
+    grid-area: itemsReceta;
+    margin-left: 8px;
+    margin-top: 5px;
+    animation: menu_animado;
+    animation-duration: 5s;
+    animation-delay: 3s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+    }
+    
+    @keyframes menu_animado {
+    0% {
+        
+    }
+    25%{
+        
+    }
+    50%{
+    
+    }
+    75%{
+      
+    }
+    100%{
+        background-color: #22c1c3;
+    }
+    }
+
+.tituloReceta {
+    grid-area: tituloReceta;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.mainReceta {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr .2fr 1fr 1.5fr;
+    grid-template-areas: "imgReceta1 imgReceta1 imgReceta1 imgReceta1"
+        "loremReceta loremReceta loremReceta loremReceta"
+        "imgReceta2 imgReceta3 imgReceta4 imgReceta5"
+        "imgReceta6 imgReceta7 imgReceta8 imgReceta9";
+}
+
+.imgReceta1 {
+    grid-area: imgReceta1;
+    text-align: center;
+}
+
+.loremReceta {
+    grid-area: loremReceta;
+    text-align: center;
+    text-align: center;
+}
+
+.imgReceta2 {
+    grid-area: imgReceta2;
+    display: flex;
+    justify-self: center;
+}
+
+.imgReceta3 {
+    grid-area: imgReceta3;
+    display: flex;
+    justify-self: center;
+}
+
+.imgReceta4 {
+    grid-area: imgReceta4;
+    display: flex;
+    justify-self: center;
+}
+
+.imgReceta5 {
+    grid-area: imgReceta5;
+    display: flex;
+    justify-self: center;
+}
+
+.imgReceta6 {
+    grid-area: imgReceta6;
+    justify-self: center;
+    margin-top: 30%;
+}
+
+.imgReceta7 {
+    grid-area: imgReceta7;
+    justify-self: center;
+    margin-top: 30%;
+}
+
+.imgReceta8 {
+    grid-area: imgReceta8;
+    justify-self: center;
+    margin-top: 30%;
+}
+
+.imgReceta9 {
+    grid-area: imgReceta9;
+    justify-self: center;
+    margin-top: 30%;
+}
+
+.footerReceta {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+    grid-template-areas: "footerReceta";
+}
+
+.footerReceta {
+    grid-area: footerReceta;
+    border: 1.5px solid rgba(184, 170, 170, 0.68);
+    background-image: linear-gradient(0deg, rgba(34,193,195,1) 0%, rgba(4,6,3,0.7235936610972514) 38%);
+    text-align: center;
+}
+
+/*  ---- ICONO DE WHATSAPP ---- */
+
+.container {
+    background-color: #2e6329;
+    border: 1px solid #fff;
+    position: sticky;
+    z-index: 5;
+    border-radius: 50%;
+    bottom: 20px;
+    transition: ease 1.3s;
+    animation: efecto 1s normal;
+    animation-name: cambiarColor;
+    animation-duration: 6s;
+}
+
+@keyframes cambiarColor {
+    0% {
+        transform: scale(1);
+    }
+    20% {
+        transform: scale(1.3);
+    }
+    50% {
+        transform: scale(1.6);
+    }
+    80% {
+        transform: scale(1.9);
+    }
+    100%{
+        transform: scale(1);
+    }
+}
+
+.container:hover{
+    transform: scale(1.1);
+    transition: 1.3s;
+}
+
+.boton{
+    width: 80px;
+    transition: ease 1s;
+    left: 91%;
+}
+
+@media only screen and (max-width: 1024px) {
+
+    /* ---- INDEX ---- */
+
+    .headerIndex {
+        grid-template-rows: .8fr .9fr;
+    }
+
+    .boton{
+        width: 80px;
+        transition: ease 1s;
+        left: 89%;
+    }
+
+     /* ---- LENTES DE CONTACTO ---- */
+
+    .headerLentes {
+        grid-template-columns: 1.8fr 8fr;
+    }
+
+    .mainLentes {
+        grid-template-rows: 1.5fr .2fr 1fr 1.5fr;
+    }
+
+    .imgLentes1 {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    /* ----ANTEOJOS DE SOL ---- */
+
+    .headerSol {
+        grid-template-columns: 1.8fr 8fr;
+    }
+
+    .mainSol {
+        grid-template-rows: 1.5fr .2fr 1fr 1.5fr;
+    }
+
+    .imgSol1 {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    /* ----ANTEOJOS DE RECETA ---- */
+
+    .headerReceta {
+        grid-template-columns: 1.8fr 8fr;
+    }
+
+    .mainReceta {
+        grid-template-rows: 1.5fr .2fr 1fr 1.5fr;
+    }
+
+    .imgReceta1 {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+}
+
+@media only screen and (max-width: 800px) {
+
+    /* ---- INDEX ---- */
+
+       .headerIndex {
+        grid-template-columns: 1.7fr 8fr;
+        grid-template-rows: .9fr 1fr;
+    }
+
+    .mainIndex {
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr .2fr .1fr .1fr .1fr .1fr 1fr;
+        grid-template-areas: "imgIndex1 imgIndex2"
+                             "imgIndex3 imgIndex3"
+                             "loremIndex loremIndex"
+                             "tb1 tb1 "
+                             "tb2 tb3"
+                             "tb4 tb5"
+                             "tb6 tb7"
+                             "videoIndex videoIndex";
+    }
+
+    .tituloIndex {
+        flex-wrap: wrap;
+    }
+
+    .tb1 {                    
+        margin-right: 32vh;
+        margin-left: 33vh;
+    }
+    
+    .tb2,
+    .tb4,
+    .tb6 {
+        margin-left: 33vh;
+    }
+    
+    .tb3,
+    .tb5,
+    .tb7 {
+        margin-right: 32vh;
+    }
+
+    .videoIndex {
+       margin-top: 5vh;
+       display: flex;
+       justify-content: center;
+       flex-wrap: wrap;  
+    }
+
+    .boton{
+        width: 60px;
+        left: 88%;
+    }
+
+    /* ---- LENTES DE CONTACTO ---- */
+
+    .headerLentes {
+        grid-template-columns: 2fr 8fr;
+        grid-template-rows: 1fr 1fr;
+    }
+
+    .mainLentes {
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 0.3fr 1.5fr 1.5fr 1.5fr 1fr;
+        grid-template-areas: "imgLentes1 imgLentes1"
+                             "loremLentes loremLentes"
+                             "imgLentes2 imgLentes3" 
+                             "imgLentes4 imgLentes5"
+                             "imgLentes6 imgLentes7" 
+                             "imgLentes8 imgLentes9";
+    }
+
+    .imgLentes1 {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    .imgLentes2 {
+        grid-area: imgLentes2;
+        display: flex;
+        justify-self: center;
+    }
+    
+    .imgLentes3 {
+        grid-area: imgLentes3;
+        display: flex;
+        justify-self: center;
+    }
+    
+    .imgLentes4 {
+        grid-area: imgLentes4;
+        display: flex;
+        justify-self: center;
+    }
+    
+    .imgLentes5 {
+        grid-area: imgLentes5;
+        display: flex;
+        justify-self: center;
+    }
+    
+    .imgLentes6 {
+        margin-top: 0;
+    }
+    
+    .imgLentes7 {
+        margin-top: 0;
+    }
+    
+    .imgLentes8 {
+        margin-top: 0;
+    }
+    
+    .imgLentes9 {
+        margin-top: 0;
+    }
+
+    /*  ---- ANTEOJOS DE SOL ---- */
+
+    .headerSol {
+        grid-template-rows: 1fr 1fr;
+    }
+
+    .mainSol {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 0.3fr 1.5fr 1.5fr 1.5fr 1fr;
+        grid-template-areas:"imgSol1 imgSol1"
+                            "loremSol loremSol"
+                            "imgSol2 imgSol3" 
+                            "imgSol4 imgSol5"
+                            "imgSol6 imgSol7" 
+                            "imgSol8 imgSol9";
+    }
+
+    .imgSol1 {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    .imgSol2,
+    .imgSol3,
+    .imgSol4,
+    .imgSol5 {
+        display: flex;
+        justify-self: center;
+    }
+    
+    .imgSol6,
+    .imgSol7,
+    .imgSol8,
+    .imgSol9 {
+        margin-top: 0;
+    }
+
+    /* ----ANTEOJO DE RECETA ---- */
+
+    .mainReceta {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 0.3fr 1.5fr 1.5fr 1.5fr 1fr;
+        grid-template-areas:"imgReceta1 imgReceta1"
+                            "loremReceta loremReceta"
+                            "imgReceta2 imgReceta3" 
+                            "imgReceta4 imgReceta5"
+                            "imgReceta6 imgReceta7" 
+                            "imgReceta8 imgReceta9";
+    }
+
+    .imgReceta1 {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    .imgReceta2,
+    .imgReceta3,
+    .imgReceta4,
+    .imgReceta5 {
+        display: flex;
+        justify-self: center;
+    }
+    
+    .imgReceta6,
+    .imgReceta7,
+    .imgReceta8,
+    .imgReceta9 {
+        margin-top: 0;
+    }
+}
+
+@media only screen and (max-width: 500px) {
+
+    /* ---- INDEX ---- */
+
+    .editarDc {
+        font-size: 3em;
+    }
+    
+    .editarOptica {
+        font-size: 3em;
+    }
+
+    .headerIndex {
+        grid-template-rows: .7fr .9fr;
+    }
+    
+    .mainIndex {
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows:  1fr 1fr 1fr .1fr .1fr .1fr .1fr .1fr 1fr;
+        grid-template-areas: "imgIndex1 imgIndex1"
+                             "imgIndex2 imgIndex2"
+                             "imgIndex3 imgIndex3"
+                             "loremIndex loremIndex"
+                             "tb1 tb1 "
+                             "tb2 tb3"
+                             "tb4 tb5"
+                             "tb6 tb7"
+                             "videoIndex videoIndex";
+    }
+
+    .tb1 {
+        margin-right: 0;
+        margin-left: 0;
+    }
+    
+    .tb2,
+    .tb4,
+    .tb6 {
+        margin-left: 0;
+    }
+    
+    .tb3,
+    .tb5,
+    .tb7 {
+        margin-right: 0;
+    }        
+
+    .boton{
+        width: 48px;
+        left: 83%;
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    /* ---- LENTES DE CONTACTO ---- */
+
+    .headerLentes {
+        display: grid;
+        grid-template-columns: 0.4fr 1fr;
+        grid-template-rows: 1fr 1fr;
+    }
+
+    .mainLentes {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 20vh 1fr 40vh 40vh 40vh 40vh 40vh 40vh 40vh 30vh;
+        grid-template-areas:"imgLentes1"
+                            "loremLentes"
+                            "imgLentes2" 
+                            "imgLentes3" 
+                            "imgLentes4" 
+                            "imgLentes5"
+                            "imgLentes6" 
+                            "imgLentes7" 
+                            "imgLentes8" 
+                            "imgLentes9";
+    }
+    
+    .imgLentes2,
+    .imgLentes3,
+    .imgLentes4,
+    .imgLentes5 {
+        align-self: center;
+    }
+
+    .imgLentes6,
+    .imgLentes7,
+    .imgLentes8,
+    .imgLentes9 {    
+        margin-top: 0%;
+        align-self: center;
+    }
+
+    /*  ---- CONTACTO ---- */
+
+    .form {
+        width: 18em;
+    }
+
+    /*  ----ANTEOJOS DE SOL ---- */
+
+    .headerSol {
+        display: grid;
+        grid-template-columns: 0.4fr 1fr;
+        grid-template-rows: .9fr 1fr;
+    }
+
+    .tituloSol {
+        right: 0;
+    }
+
+    .mainSol {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 20vh 1fr 40vh 40vh 40vh 40vh 40vh 40vh 40vh 30vh;
+        grid-template-areas:"imgSol1"
+                            "loremSol"
+                            "imgSol2" 
+                            "imgSol3" 
+                            "imgSol4" 
+                            "imgSol5"
+                            "imgSol6" 
+                            "imgSol7" 
+                            "imgSol8" 
+                            "imgSol9";
+    }
+
+    .imgSol2,
+    .imgSol3,
+    .imgSol4,
+    .imgSol5 {
+    align-self: center;
+    }
+
+    .imgSol6,
+    .imgSol7,
+    .imgSol8,
+    .imgSol9 {    
+    margin-top: 0%;
+    align-self: center;
+    }
+
+    /* ----ANTEOJOS DE RECETA ---- */
+    .headerReceta {
+        display: grid;
+        grid-template-columns: 0.4fr 1fr;
+        grid-template-rows: 1fr 1fr;
+    }
+
+    .mainReceta {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 20vh 1fr 40vh 40vh 40vh 40vh 40vh 40vh 40vh 30vh;
+        grid-template-areas:"imgReceta1"
+                            "loremReceta"
+                            "imgReceta2" 
+                            "imgReceta3" 
+                            "imgReceta4" 
+                            "imgReceta5"
+                            "imgReceta6" 
+                            "imgReceta7" 
+                            "imgReceta8" 
+                            "imgReceta9";
+    }
+    
+    .imgReceta2,
+    .imgReceta3,
+    .imgReceta4,
+    .imgReceta5 {
+        align-self: center;
+    }
+
+    .imgReceta6,
+    .imgReceta7,
+    .imgReceta8,
+    .imgReceta9 {    
+        margin-top: 0%;
+        align-self: center;
+    }
+}
