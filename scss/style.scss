@@ -3,7 +3,7 @@ body {
     background-size: cover;
     display: block;
 }
-
+@import './variable';
 @import './header';
 @import './main';
 
@@ -674,7 +674,7 @@ a {
 .mainSol {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
-    grid-template-rows: 1fr .2fr 1fr 1.5fr;
+    grid-template-rows: 1fr .1fr 1.8fr 2.3fr;
     grid-template-areas: "imgSol1 imgSol1 imgSol1 imgSol1"
         "loremSol loremSol loremSol loremSol"
         "imgSol2 imgSol3 imgSol4 imgSol5"
