@@ -67,7 +67,8 @@ a {
   display: grid;
   grid-template-columns: 1fr 8fr;
   grid-template-rows: 1fr .9fr;
-  grid-template-areas: "barraTituIndex barraTituIndex" "itemsIndex tituloIndex"; }
+  grid-template-areas: "barraTituIndex barraTituIndex"
+ "itemsIndex tituloIndex"; }
 
 .barraTituIndex {
   grid-area: barraTituIndex;
@@ -107,7 +108,13 @@ a {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   grid-template-rows: .7fr .1fr .1fr .1fr .1fr .1fr 1fr;
-  grid-template-areas: "imgIndex1 imgIndex2 imgIndex3" "loremIndex loremIndex loremIndex" "tb1 tb1 tb1" "tb2 tb3 tb3" "tb4 tb5 tb5" "tb6 tb7 tb7" "videoIndex videoIndex videoIndex"; }
+  grid-template-areas: "imgIndex1 imgIndex2 imgIndex3"
+ "loremIndex loremIndex loremIndex"
+ "tb1 tb1 tb1"
+ "tb2 tb3 tb3"
+ "tb4 tb5 tb5"
+ "tb6 tb7 tb7"
+ "videoIndex videoIndex videoIndex"; }
 
 .imgIndex1 {
   grid-area: imgIndex1;
@@ -357,7 +364,8 @@ a {
   display: grid;
   grid-template-columns: 1.2fr 8fr;
   grid-template-rows: 1fr 1fr;
-  grid-template-areas: "barraTituLentes barraTituLentes" "itemsLentes tituloLentes"; }
+  grid-template-areas: "barraTituLentes barraTituLentes"
+ "itemsLentes tituloLentes"; }
 
 .barraTituLentes {
   grid-area: barraTituLentes;
@@ -398,7 +406,10 @@ a {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
   grid-template-rows: 1fr .2fr 1fr 1.5fr;
-  grid-template-areas: "imgLentes1 imgLentes1 imgLentes1 imgLentes1" "loremLentes loremLentes loremLentes loremLentes" "imgLentes2 imgLentes3 imgLentes4 imgLentes5" "imgLentes6 imgLentes7 imgLentes8 imgLentes9"; }
+  grid-template-areas: "imgLentes1 imgLentes1 imgLentes1 imgLentes1"
+ "loremLentes loremLentes loremLentes loremLentes"
+ "imgLentes2 imgLentes3 imgLentes4 imgLentes5"
+ "imgLentes6 imgLentes7 imgLentes8 imgLentes9"; }
 
 .imgLentes1 {
   grid-area: imgLentes1;
@@ -469,7 +480,8 @@ a {
   display: grid;
   grid-template-columns: 1fr;
   grid-template-rows: 1fr 1fr;
-  grid-template-areas: "barraContacto" "itemsContacto"; }
+  grid-template-areas: "barraContacto"
+ "itemsContacto"; }
 
 .barraContacto {
   grid-area: barraContacto;
@@ -528,7 +540,8 @@ a {
   display: grid;
   grid-template-columns: 1.2fr 8fr;
   grid-template-rows: 1fr 1fr;
-  grid-template-areas: "barraSol barraSol" "itemsSol tituloSol"; }
+  grid-template-areas: "barraSol barraSol"
+ "itemsSol tituloSol"; }
 
 .barraSol {
   grid-area: barraSol;
@@ -571,7 +584,10 @@ a {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
   grid-template-rows: 0.1fr .1fr .5fr 1fr;
-  grid-template-areas: "imgSol1 imgSol1 imgSol1 imgSol1" "loremSol loremSol loremSol loremSol" "imgSol2 imgSol3 imgSol4 imgSol5" "imgSol6 imgSol7 imgSol8 imgSol9"; }
+  grid-template-areas: "imgSol1 imgSol1 imgSol1 imgSol1"
+ "loremSol loremSol loremSol loremSol"
+ "imgSol2 imgSol3 imgSol4 imgSol5"
+ "imgSol6 imgSol7 imgSol8 imgSol9"; }
 
 .imgSol1 {
   grid-area: imgSol1;
@@ -642,7 +658,8 @@ a {
   display: grid;
   grid-template-columns: 1fr 8fr;
   grid-template-rows: 1.2fr 1fr;
-  grid-template-areas: "barraReceta barraReceta" "itemsReceta tituloReceta"; }
+  grid-template-areas: "barraReceta barraReceta"
+ "itemsReceta tituloReceta"; }
 
 .barraReceta {
   grid-area: barraReceta;
@@ -683,7 +700,10 @@ a {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
   grid-template-rows: 1fr .2fr 1fr 1.5fr;
-  grid-template-areas: "imgReceta1 imgReceta1 imgReceta1 imgReceta1" "loremReceta loremReceta loremReceta loremReceta" "imgReceta2 imgReceta3 imgReceta4 imgReceta5" "imgReceta6 imgReceta7 imgReceta8 imgReceta9"; }
+  grid-template-areas: "imgReceta1 imgReceta1 imgReceta1 imgReceta1"
+ "loremReceta loremReceta loremReceta loremReceta"
+ "imgReceta2 imgReceta3 imgReceta4 imgReceta5"
+ "imgReceta6 imgReceta7 imgReceta8 imgReceta9"; }
 
 .imgReceta1 {
   grid-area: imgReceta1;
@@ -801,7 +821,7 @@ a {
   .headerSol {
     grid-template-columns: 1.8fr 8fr; }
   .mainSol {
-    grid-template-rows: 1fr 1fr 1fr 1fr; }
+    grid-template-rows: 0.3fr .1fr 1fr 1fr; }
   .imgSol1 {
     display: flex;
     align-items: center;
@@ -824,7 +844,14 @@ a {
   .mainIndex {
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr 1fr .2fr .1fr .1fr .1fr .1fr 1fr;
-    grid-template-areas: "imgIndex1 imgIndex2" "imgIndex3 imgIndex3" "loremIndex loremIndex" "tb1 tb1 " "tb2 tb3" "tb4 tb5" "tb6 tb7" "videoIndex videoIndex"; }
+    grid-template-areas: "imgIndex1 imgIndex2"
+ "imgIndex3 imgIndex3"
+ "loremIndex loremIndex"
+ "tb1 tb1 "
+ "tb2 tb3"
+ "tb4 tb5"
+ "tb6 tb7"
+ "videoIndex videoIndex"; }
   .tituloIndex {
     flex-wrap: wrap; }
   .tb1 {
@@ -853,7 +880,12 @@ a {
   .mainLentes {
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr 0.3fr 1.5fr 1.5fr 1.5fr 1fr;
-    grid-template-areas: "imgLentes1 imgLentes1" "loremLentes loremLentes" "imgLentes2 imgLentes3"  "imgLentes4 imgLentes5" "imgLentes6 imgLentes7"  "imgLentes8 imgLentes9"; }
+    grid-template-areas: "imgLentes1 imgLentes1"
+ "loremLentes loremLentes"
+ "imgLentes2 imgLentes3" 
+ "imgLentes4 imgLentes5"
+ "imgLentes6 imgLentes7" 
+ "imgLentes8 imgLentes9"; }
   .imgLentes1 {
     display: flex;
     align-items: center;
@@ -888,8 +920,13 @@ a {
   .mainSol {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
-    grid-template-areas: "imgSol1 imgSol1" "loremSol loremSol" "imgSol2 imgSol3"  "imgSol4 imgSol5" "imgSol6 imgSol7"  "imgSol8 imgSol9"; }
+    grid-template-rows: 0.3fr .1fr 1fr 1fr 1fr 1fr;
+    grid-template-areas: "imgSol1 imgSol1"
+ "loremSol loremSol"
+ "imgSol2 imgSol3" 
+ "imgSol4 imgSol5"
+ "imgSol6 imgSol7" 
+ "imgSol8 imgSol9"; }
   .imgSol1 {
     display: flex;
     align-items: center;
@@ -910,7 +947,12 @@ a {
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr 0.3fr 1.5fr 1.5fr 1.5fr 1fr;
-    grid-template-areas: "imgReceta1 imgReceta1" "loremReceta loremReceta" "imgReceta2 imgReceta3"  "imgReceta4 imgReceta5" "imgReceta6 imgReceta7"  "imgReceta8 imgReceta9"; }
+    grid-template-areas: "imgReceta1 imgReceta1"
+ "loremReceta loremReceta"
+ "imgReceta2 imgReceta3" 
+ "imgReceta4 imgReceta5"
+ "imgReceta6 imgReceta7" 
+ "imgReceta8 imgReceta9"; }
   .imgReceta1 {
     display: flex;
     align-items: center;
@@ -938,7 +980,15 @@ a {
   .mainIndex {
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr 1fr 1fr .1fr .1fr .1fr .1fr .1fr 1fr;
-    grid-template-areas: "imgIndex1 imgIndex1" "imgIndex2 imgIndex2" "imgIndex3 imgIndex3" "loremIndex loremIndex" "tb1 tb1 " "tb2 tb3" "tb4 tb5" "tb6 tb7" "videoIndex videoIndex"; }
+    grid-template-areas: "imgIndex1 imgIndex1"
+ "imgIndex2 imgIndex2"
+ "imgIndex3 imgIndex3"
+ "loremIndex loremIndex"
+ "tb1 tb1 "
+ "tb2 tb3"
+ "tb4 tb5"
+ "tb6 tb7"
+ "videoIndex videoIndex"; }
   .tb1 {
     margin-right: 0;
     margin-left: 0; }
@@ -964,7 +1014,16 @@ a {
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: 20vh 1fr 40vh 40vh 40vh 40vh 40vh 40vh 40vh 30vh;
-    grid-template-areas: "imgLentes1" "loremLentes" "imgLentes2"  "imgLentes3"  "imgLentes4"  "imgLentes5" "imgLentes6"  "imgLentes7"  "imgLentes8"  "imgLentes9"; }
+    grid-template-areas: "imgLentes1"
+ "loremLentes"
+ "imgLentes2" 
+ "imgLentes3" 
+ "imgLentes4" 
+ "imgLentes5"
+ "imgLentes6" 
+ "imgLentes7" 
+ "imgLentes8" 
+ "imgLentes9"; }
   .imgLentes2,
   .imgLentes3,
   .imgLentes4,
@@ -990,7 +1049,16 @@ a {
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: .2fr .1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
-    grid-template-areas: "imgSol1" "loremSol" "imgSol2"  "imgSol3"  "imgSol4"  "imgSol5" "imgSol6"  "imgSol7"  "imgSol8"  "imgSol9"; }
+    grid-template-areas: "imgSol1"
+ "loremSol"
+ "imgSol2" 
+ "imgSol3" 
+ "imgSol4" 
+ "imgSol5"
+ "imgSol6" 
+ "imgSol7" 
+ "imgSol8" 
+ "imgSol9"; }
   .imgSol2,
   .imgSol3,
   .imgSol4,
@@ -1011,7 +1079,16 @@ a {
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: 20vh 1fr 40vh 40vh 40vh 40vh 40vh 40vh 40vh 30vh;
-    grid-template-areas: "imgReceta1" "loremReceta" "imgReceta2"  "imgReceta3"  "imgReceta4"  "imgReceta5" "imgReceta6"  "imgReceta7"  "imgReceta8"  "imgReceta9"; }
+    grid-template-areas: "imgReceta1"
+ "loremReceta"
+ "imgReceta2" 
+ "imgReceta3" 
+ "imgReceta4" 
+ "imgReceta5"
+ "imgReceta6" 
+ "imgReceta7" 
+ "imgReceta8" 
+ "imgReceta9"; }
   .imgReceta2,
   .imgReceta3,
   .imgReceta4,
