@@ -1313,7 +1313,7 @@ a {
     .mainSol {
         display: grid;
         grid-template-columns: 1fr;
-        grid-template-rows: 20vh 1fr 40vh 40vh 40vh 40vh 40vh 40vh 40vh 30vh;
+        grid-template-rows: .2fr .1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
         grid-template-areas:"imgSol1"
                             "loremSol"
                             "imgSol2" 
