@@ -38,14 +38,14 @@ main {
                         display: inline-block;
                         padding: 10px;
                         margin-top: 8px;
-                        color: #0CE8E1;
-                        border: 1px solid #0CE8E1;
+                        color: $verdeAgua;
+                        border: 1px solid $verdeAgua;
                         border-radius: 4px;
                         transition: all 400ms ease;
 
                         &:hover {
                             color: white;
-                            background-color: $color-especial;
+                            background-color: $verdeAgua;
                         }
                     }
                 }
