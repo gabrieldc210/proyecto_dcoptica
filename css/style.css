@@ -888,7 +888,7 @@ a {
   .mainSol {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 0.3fr 0.1fr 1fr 1fr 1fr 1fr;
     grid-template-areas: "imgSol1 imgSol1" "loremSol loremSol" "imgSol2 imgSol3"  "imgSol4 imgSol5" "imgSol6 imgSol7"  "imgSol8 imgSol9"; }
   .imgSol1 {
     display: flex;
