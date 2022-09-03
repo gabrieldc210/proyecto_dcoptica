@@ -150,12 +150,12 @@ li {
     visibility: visible;
 }
 
-.imgIndex1 figure:hover > .capa h3 {
+.imgIndex1 figure:hover > .capa h2 {
     margin-top: 70px;
     margin-bottom: 15px;
 }
 
-.imgIndex1 figure .capa h3 {
+.imgIndex1 figure .capa h2 {
     color: white;
     font-weight: 400;
     margin-bottom: 120px;
@@ -208,12 +208,12 @@ li {
     visibility: visible;
 }
 
-.imgIndex2 figure:hover > .capa2 h3 {
+.imgIndex2 figure:hover > .capa2 h2 {
     margin-top: 70px;
     margin-bottom: 15px;
 }
 
-.imgIndex2 figure .capa2 h3 {
+.imgIndex2 figure .capa2 h2 {
     color: white;
     font-weight: 400;
     margin-bottom: 120px;
@@ -266,12 +266,12 @@ li {
     visibility: visible;
 }
 
-.imgIndex3 figure:hover > .capa3 h3 {
+.imgIndex3 figure:hover > .capa3 h2 {
     margin-top: 70px;
     margin-bottom: 15px;
 }
 
-.imgIndex3 figure .capa3 h3 {
+.imgIndex3 figure .capa3 h2 {
     color: white;
     font-weight: 400;
     margin-bottom: 120px;
