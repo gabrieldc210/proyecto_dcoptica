@@ -311,17 +311,8 @@ li {
    margin-top: 10vh;
 }
 
-
-
-.footerIndex {
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: 1fr;
-    grid-template-areas: "footerIndex";
-}
-
-.footerIndex {
-    grid-area: footerIndex;
+/* ---- FOOTER GENERAL ---- */
+footer {
     border: 1.5px solid rgba(184, 170, 170, 0.68);
     background-image: linear-gradient(0deg, rgba(34,193,195,1) 0%, rgba(4,6,3,0.7235936610972514) 38%);
     text-align: center;
@@ -457,20 +448,6 @@ li {
     margin-top: 30%;
 }
 
-.footerLentes {
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: 1fr;
-    grid-template-areas: "footerLentes";
-}
-
-.footerLentes {
-    grid-area: footerLentes;
-    border: 1.5px solid rgba(184, 170, 170, 0.68);
-    background-image: linear-gradient(0deg, rgba(34,193,195,1) 0%, rgba(4,6,3,0.7235936610972514) 38%);
-    text-align: center;
-}
-
 /*  ---- CONTACTO ---- */
 
 .headerContacto {
@@ -533,21 +510,6 @@ li {
     border: 3px solid rgba(7, 6, 6, 0.338);
     width: 30em;
     height: 20em;
-}
-
-.footerContacto {
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: 1fr;
-    grid-template-areas: "footerReceta";
-}
-
-
-.footerContacto {
-    grid-area: footerContacto;
-    text-align: center;
-    border: 1.5px solid rgba(184, 170, 170, 0.68);
-    background-image: linear-gradient(0deg, rgba(34,193,195,1) 0%, rgba(4,6,3,0.7235936610972514) 38%);
 }
 
 /*  ---- ANTEOJOS DE SOL ---- */
@@ -682,20 +644,6 @@ li {
     margin-top: 30%;
 }
 
-.footerSol {
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: 1fr;
-    grid-template-areas: "footerSol";
-}
-
-.footerSol {
-    grid-area: footerSol;
-    border: 1.5px solid rgba(184, 170, 170, 0.68);
-    background-image: linear-gradient(0deg, rgba(34,193,195,1) 0%, rgba(4,6,3,0.7235936610972514) 38%);
-    text-align: center;
-}
-
 /*  ---- ANTEOJOS DE RECETA ---- */
 
 .headerReceta {
@@ -821,20 +769,6 @@ li {
     grid-area: imgReceta9;
     justify-self: center;
     margin-top: 30%;
-}
-
-.footerReceta {
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: 1fr;
-    grid-template-areas: "footerReceta";
-}
-
-.footerReceta {
-    grid-area: footerReceta;
-    border: 1.5px solid rgba(184, 170, 170, 0.68);
-    background-image: linear-gradient(0deg, rgba(34,193,195,1) 0%, rgba(4,6,3,0.7235936610972514) 38%);
-    text-align: center;
 }
 
 /*  ---- ICONO DE WHATSAPP ---- */
@@ -1215,9 +1149,8 @@ li {
     }
 
     .mainSol {
-        display: grid;
         grid-template-columns: 1fr;
-        grid-template-rows: 20vh 1fr 40vh 40vh 40vh 40vh 40vh 40vh 40vh 30vh;
+        grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 2fr 2fr;
         grid-template-areas:"imgSol1"
                             "loremSol"
                             "imgSol2" 
@@ -1241,7 +1174,6 @@ li {
     .imgSol7,
     .imgSol8,
     .imgSol9 {    
-    margin-top: 0%;
     align-self: center;
     }
 
