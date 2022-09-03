@@ -301,7 +301,7 @@ li {
     grid-area: table;
     display: flexbox;
     justify-self: center;
-
+    background-color: rgba(78, 204, 213, 0.881);
 }
 
 
