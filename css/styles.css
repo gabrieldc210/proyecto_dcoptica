@@ -107,7 +107,7 @@ li {
 .mainIndex {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: .7fr .1fr .1fr .1fr;
+    grid-template-rows: .7fr .2fr .1fr .1fr;
     grid-template-areas: "imgIndex1 imgIndex2 imgIndex3"
                          "loremIndex loremIndex loremIndex"
                          "table table table"
@@ -290,7 +290,9 @@ li {
 
 .loremIndex {
     grid-area: loremIndex;
-    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 /*-------TABLA-------*/
@@ -953,37 +955,18 @@ li {
 
     .mainIndex {
         grid-template-columns: 1fr 1fr;
-        grid-template-rows: 1fr 1fr .2fr .1fr .1fr .1fr .1fr 1fr;
+        grid-template-rows: 1fr 1fr .2fr .1fr .1fr;
         grid-template-areas: "imgIndex1 imgIndex2"
                              "imgIndex3 imgIndex3"
                              "loremIndex loremIndex"
-                             "tb1 tb1 "
-                             "tb2 tb3"
-                             "tb4 tb5"
-                             "tb6 tb7"
+                             "table table"
                              "videoIndex videoIndex";
     }
 
     .tituloIndex {
         flex-wrap: wrap;
     }
-
-    .tb1 {                    
-        margin-right: 32vh;
-        margin-left: 33vh;
-    }
     
-    .tb2,
-    .tb4,
-    .tb6 {
-        margin-left: 33vh;
-    }
-    
-    .tb3,
-    .tb5,
-    .tb7 {
-        margin-right: 32vh;
-    }
 
     .videoIndex {
        margin-top: 5vh;
@@ -1154,34 +1137,18 @@ li {
     
     .mainIndex {
         grid-template-columns: 1fr 1fr;
-        grid-template-rows:  1fr 1fr 1fr .1fr .1fr .1fr .1fr .1fr 1fr;
+        grid-template-rows:  1fr 1fr 1fr .1fr .1fr .1fr;
         grid-template-areas: "imgIndex1 imgIndex1"
                              "imgIndex2 imgIndex2"
                              "imgIndex3 imgIndex3"
                              "loremIndex loremIndex"
-                             "tb1 tb1 "
-                             "tb2 tb3"
-                             "tb4 tb5"
-                             "tb6 tb7"
+                             "table table"
                              "videoIndex videoIndex";
     }
 
-    .tb1 {
-        margin-right: 0;
-        margin-left: 0;
+    .loremIndex {
+        text-align: center;
     }
-    
-    .tb2,
-    .tb4,
-    .tb6 {
-        margin-left: 0;
-    }
-    
-    .tb3,
-    .tb5,
-    .tb7 {
-        margin-right: 0;
-    }        
 
     .boton{
         width: 48px;
