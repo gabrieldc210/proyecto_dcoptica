@@ -4,6 +4,9 @@ body {
     display: block;
 }
 
+@import './variables';
+@import './main';
+
 * {
     margin: 0;
     padding: 0;
@@ -391,7 +394,7 @@ footer {
 .main {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
-    grid-template-rows: 1fr .2fr 1fr 1.5fr;
+    grid-template-rows: 0.5fr 0.2fr 1fr 1.5fr;
     grid-template-areas: "img1 img1 img1 img1"
         "lorem lorem lorem lorem"
         "img2 img3 img4 img5"
@@ -521,7 +524,7 @@ footer {
     }
 
     .main {
-        grid-template-rows: 1.5fr .2fr 1fr 1.5fr;
+        grid-template-rows: 0.5fr 0.1fr 1fr 1.5fr;
     }
 
     .img1 {
@@ -566,7 +569,7 @@ footer {
     .main {
         display: grid;
         grid-template-columns: 1fr 1fr;
-        grid-template-rows: 1fr 0.3fr 1.5fr 1.5fr 1.5fr 1fr;
+        grid-template-rows: 0.3fr 0fr 1.5fr 1.5fr 1.5fr 1fr;
         grid-template-areas:"img1 img1"
                             "lorem lorem"
                             "img2 img3" 
@@ -651,7 +654,7 @@ footer {
 
     .main {
         grid-template-columns: 1fr;
-        grid-template-rows: 0.5fr 0.3fr 0fr 1.5fr 1.5fr 1.5fr 1.5fr 1.5fr 1.5fr 1.5fr;
+        grid-template-rows: 0.2fr 0.1fr 0fr 1.5fr 1.5fr 1.5fr 1.5fr 1.5fr 1.5fr 1.5fr;
         grid-template-areas:"img1"
                             "lorem"
                             "img2" 

@@ -3,6 +3,39 @@ body {
   background-size: cover;
   display: block; }
 
+main article div div {
+  margin: 15px;
+  border-radius: 6px;
+  overflow: hidden;
+  background-color: #fff;
+  box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.2);
+  cursor: default;
+  transition: all 400ms ease;
+  padding: 10px;
+  text-align: center; }
+  main article div div:hover {
+    box-shadow: 0px 1px 10px rgba(5, 5, 20, 0.4);
+    transform: translate(-2%); }
+  main article div div div h3 {
+    font-weight: 400;
+    margin-bottom: 20px; }
+  main article div div div p {
+    line-height: 1.5;
+    color: #535050; }
+
+.button, main article div div div a {
+  text-decoration: none;
+  display: inline-block;
+  padding: 10px;
+  margin-top: 8px;
+  color: #0CE8E1;
+  border: 1px solid #0CE8E1;
+  border-radius: 4px;
+  transition: all 400ms ease; }
+  .button:hover, main article div div div a:hover {
+    color: #fff;
+    background-color: #0CE8E1; }
+
 * {
   margin: 0;
   padding: 0;
@@ -316,7 +349,7 @@ footer {
 .main {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
-  grid-template-rows: 1fr .2fr 1fr 1.5fr;
+  grid-template-rows: 0.5fr 0.2fr 1fr 1.5fr;
   grid-template-areas: "img1 img1 img1 img1" "lorem lorem lorem lorem" "img2 img3 img4 img5" "img6 img7 img8 img9"; }
 
 .img1 {
@@ -415,7 +448,7 @@ footer {
   .header {
     grid-template-columns: 1.8fr 8fr; }
   .main {
-    grid-template-rows: 1.5fr .2fr 1fr 1.5fr; }
+    grid-template-rows: 0.5fr 0.1fr 1fr 1.5fr; }
   .img1 {
     display: flex;
     align-items: center;
@@ -441,7 +474,7 @@ footer {
   .main {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr 0.3fr 1.5fr 1.5fr 1.5fr 1fr;
+    grid-template-rows: 0.3fr 0fr 1.5fr 1.5fr 1.5fr 1fr;
     grid-template-areas: "img1 img1" "lorem lorem" "img2 img3"  "img4 img5" "img6 img7"  "img8 img9"; }
   .img1 {
     display: flex;
@@ -488,7 +521,7 @@ footer {
     right: 0; }
   .main {
     grid-template-columns: 1fr;
-    grid-template-rows: 0.5fr 0.3fr 0fr 1.5fr 1.5fr 1.5fr 1.5fr 1.5fr 1.5fr 1.5fr;
+    grid-template-rows: 0.2fr 0.1fr 0fr 1.5fr 1.5fr 1.5fr 1.5fr 1.5fr 1.5fr 1.5fr;
     grid-template-areas: "img1" "lorem" "img2"  "img3"  "img4"  "img5" "img6"  "img7"  "img8"  "img9"; }
   .img2,
   .img3,

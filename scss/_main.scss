@@ -1,0 +1,59 @@
+main {
+    article {
+        div {
+            div {
+                margin: 15px;
+                border-radius: 6px;
+                overflow: hidden;
+                background-color: map-get($colores , "blanco");
+                box-shadow: 0px 1px 2px map-get($colores , "negro");
+                cursor: default;
+                transition: all 400ms ease;
+                
+                &:hover {
+                    box-shadow: 0px 1px 10px rgba(5px, 5px, 20px, 0.4);
+                    transform: translate(-2%);
+                }
+
+                padding: 10px;
+                text-align: center;
+
+                figure {
+                    img {}
+                }
+
+                div {
+                    h3 {
+                        font-weight: 400;
+                        margin-bottom: 20px;
+                    }
+
+                    p {
+                        line-height: 1.5;
+                        color: map-get($colores , "gris");
+                    }
+
+                    a {
+                        @extend .button
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+.button {
+    text-decoration: none;
+    display: inline-block;
+    padding: 10px;
+    margin-top: 8px;
+    color: map-get($colores , "verde");
+    border: 1px solid map-get($colores , "verde");
+    border-radius: 4px;
+    transition: all 400ms ease;
+
+    &:hover {
+        color: map-get($colores , "blanco");
+        background-color: map-get($colores , "verde");
+    }
+}
