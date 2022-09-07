@@ -1,0 +1,17 @@
+@mixin card {
+    margin: 15px;
+    border-radius: 6px;
+    overflow: hidden;
+    background-color: map-get($colores , "blanco");
+    box-shadow: 0px 1px 2px map-get($colores , "negro");
+    cursor: default;
+    transition: all 400ms ease;
+                
+    &:hover {
+    box-shadow: 0px 1px 10px rgba(5px, 5px, 20px, 0.4);
+    transform: translate(-2%);
+    }
+
+    padding: 10px;
+    text-align: center;
+}
