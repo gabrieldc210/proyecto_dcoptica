@@ -47,7 +47,7 @@ li {
 .mainIndex {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: .7fr .2fr .1fr .1fr;
+    grid-template-rows: 0.7fr 0.2fr 0.1fr 0.1fr;
     grid-template-areas: "imgIndex1 imgIndex2 imgIndex3"
                          "loremIndex loremIndex loremIndex"
                          "table table table"
@@ -538,7 +538,7 @@ footer {
 
     .mainIndex {
         grid-template-columns: 1fr 1fr;
-        grid-template-rows: 1fr 1fr .2fr .1fr .1fr;
+        grid-template-rows: 1fr 1fr 0.2fr 0.1fr 0.1fr;
         grid-template-areas: "imgIndex1 imgIndex2"
                              "imgIndex3 imgIndex3"
                              "loremIndex loremIndex"
