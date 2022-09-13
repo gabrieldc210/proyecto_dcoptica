@@ -12,14 +12,18 @@ body {
 
 .editarDc {
     color: black;
-    font-size: 4em;
-    font-family: 'Dosis', sans-serif;
+    font: {
+        size: $font-size;
+        family: 'Dosis', sans-serif; 
+    }
 }
 
 .editarOptica {
     color: map-get($colores , verde);
-    font-size: 4em;
-    font-family: 'Oswald', sans-serif;
+    font: {
+        size: $font-size;
+        family: 'Oswald', sans-serif;
+    }
 }
 
 a {
@@ -27,13 +31,19 @@ a {
 }
 
 .bordeDeli {
-    border: 1.5px solid rgba(184, 170, 170, 0.68);
-    border-radius: 15px;
+    border: {
+        radius: 15px;
+        style: solid;
+        color: map-get($colores , gris-claro);
+    }
 }
 
 table, th, td {
-    border: 2px solid black;
-    border-collapse: collapse;
+    border: {
+        color: map-get($colores , negro);
+        style: solid;
+        collapse: collapse;
+    }
     width: 50%;
     text-align: center;
 }
@@ -91,16 +101,20 @@ li {
 }
 
 .imgIndex1 figure:hover > .capa h2 {
-    margin-top: 70px;
-    margin-bottom: 15px;
+    margin: {
+        top: 70px;
+        bottom: 15px;
+    }
 }
 
 .imgIndex1 figure .capa h2 {
     color: white;
     font-weight: 400;
-    margin-bottom: 120px;
+    margin: {
+        bottom: 120px;
+        top: 30px;
+    }
     transition: all 500ms ease-out;
-    margin-top: 30px;
 }
 
 .imgIndex1 figure .capa p {
@@ -149,16 +163,20 @@ li {
 }
 
 .imgIndex2 figure:hover > .capa2 h2 {
-    margin-top: 70px;
-    margin-bottom: 15px;
+    margin: {
+        top: 70px;
+        bottom: 15px;
+    } 
 }
 
 .imgIndex2 figure .capa2 h2 {
     color: white;
     font-weight: 400;
-    margin-bottom: 120px;
+    margin: {
+        bottom: 120px;
+        top: 30px;
+    }
     transition: all 500ms ease-out;
-    margin-top: 30px;
 }
 
 .imgIndex2 figure .capa2 p {
@@ -207,16 +225,20 @@ li {
 }
 
 .imgIndex3 figure:hover > .capa3 h2 {
-    margin-top: 70px;
-    margin-bottom: 15px;
+    margin: {
+        top: 70px;
+        bottom: 15px;
+    }
 }
 
 .imgIndex3 figure .capa3 h2 {
     color: white;
     font-weight: 400;
-    margin-bottom: 120px;
+    margin: {
+        bottom: 120px;
+        top: 30px;
+    }
     transition: all 500ms ease-out;
-    margin-top: 30px;
 }
 
 .imgIndex3 figure .capa3 p {
