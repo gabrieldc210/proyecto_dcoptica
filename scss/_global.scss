@@ -17,7 +17,7 @@ body {
 }
 
 .editarOptica {
-    color: #40E0D0;
+    color: map-get($colores , verde);
     font-size: 4em;
     font-family: 'Oswald', sans-serif;
 }

@@ -1,7 +1,7 @@
 {
   "name": "aplicando_sass_de_caria_gabriel",
   "version": "1.0.0",
-  "description": "Dc Optica",
+  "description": "Venta de articulos de optica y contactologia",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
