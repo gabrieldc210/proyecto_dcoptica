@@ -1,13 +1,13 @@
-body {
-    background-image: url("../imagen/glass.jpg"); 
-    background-size: cover;
-    display: block;
-}
-
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+}
+
+body {
+    background-image: url("../imagen/glass.jpg"); 
+    background-size: cover;
+    display: block;
 }
 
 .editarDc {
