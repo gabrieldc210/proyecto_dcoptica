@@ -1,0 +1,171 @@
+@media only screen and (max-width: 1024px) {
+
+    /* ---- INDEX ---- */
+
+    .boton{
+        width: 80px;
+        transition: ease 1s;
+        left: 89%;
+    }
+
+    /*  ---- ANTEOJOS DE SOL, DE CONTACTO Y DE RECETA ---- */
+
+    .header {
+        grid-template-columns: 1.8fr 8fr;
+    }
+
+    .main {
+        grid-template-rows: 0.5fr 0.1fr 0fr 1fr;
+    }
+
+    .img1 {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+}
+
+@media only screen and (max-width: 800px) {
+
+    /* ---- INDEX ---- */
+
+    .mainIndex {
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr 0.2fr 0.1fr 0.1fr;
+        grid-template-areas: "imgIndex1 imgIndex2"
+                             "imgIndex3 imgIndex3"
+                             "loremIndex loremIndex"
+                             "table table"
+                             "videoIndex videoIndex";
+    }
+
+    .videoIndex {
+       margin-top: 5vh;
+       display: flex;
+       justify-content: center;
+       flex-wrap: wrap;  
+    }
+
+    .boton{
+        width: 60px;
+        left: 88%;
+    }
+
+    /*  ---- ANTEOJOS DE SOL, DE CONTACTO Y DE RECETA ---- */
+
+    .header {
+        grid-template-rows: 1fr 1fr;
+    }
+
+    .main {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 0.3fr 0fr 1.2fr 1.2fr 1.2fr 1fr;
+        grid-template-areas:"img1 img1"
+                            "lorem lorem"
+                            "img2 img3" 
+                            "img4 img5"
+                            "img6 img7" 
+                            "img8 img9";
+    }
+
+    .img1 {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    .img2,
+    .img3,
+    .img4,
+    .img5 {
+        display: flex;
+        justify-self: center;
+    }
+    
+    .img6,
+    .img7,
+    .img8,
+    .img9 {
+        margin-top: 0;
+    }
+}
+   
+@media only screen and (max-width: 500px) {
+
+    /* ---- INDEX ---- */
+
+    .editarDc {
+        font-size: 3em;
+    }
+    
+    .editarOptica {
+        font-size: 3em;
+    }
+    
+    .mainIndex {
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows:  1fr 1fr 1fr .1fr .1fr .1fr;
+        grid-template-areas: "imgIndex1 imgIndex1"
+                             "imgIndex2 imgIndex2"
+                             "imgIndex3 imgIndex3"
+                             "loremIndex loremIndex"
+                             "table table"
+                             "videoIndex videoIndex";
+    }
+
+    .loremIndex {
+        text-align: center;
+    }
+
+    .boton{
+        width: 48px;
+        left: 83%;
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    /*  ---- CONTACTO ---- */
+
+    .form {
+        width: 18em;
+    }
+
+      /*  ---- ANTEOJOS DE SOL, DE CONTACTO Y DE RECETA ---- */
+
+    .header {
+        display: grid;
+        grid-template-columns: 0.4fr 1fr;
+        grid-template-rows: .9fr 1fr;
+    }
+
+    .titulo {
+        right: 0;
+    }
+
+    .main {
+        grid-template-columns: 1fr;
+        grid-template-rows: 0.2fr 0.1fr 0fr 1.1fr 1.1fr 1.1fr 1.1fr 1.1fr 1.1fr 1.1fr;
+        grid-template-areas:"img1"
+                            "lorem"
+                            "img2" 
+                            "img3" 
+                            "img4" 
+                            "img5"
+                            "img6" 
+                            "img7" 
+                            "img8" 
+                            "img9";
+    }
+
+    .img2,
+    .img3,
+    .img4,
+    .img5,
+    .img6,
+    .img7,
+    .img8,
+    .img9 {    
+    align-self: center;
+    }
+}

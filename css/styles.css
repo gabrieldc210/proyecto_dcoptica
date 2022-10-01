@@ -11,15 +11,179 @@ body {
 a {
   text-decoration: none; }
 
+li {
+  list-style: none; }
+
+/*  ---- ICONO DE WHATSAPP ---- */
+.container {
+  background-color: #2e6329;
+  border: 1px solid #fff;
+  position: sticky;
+  z-index: 5;
+  border-radius: 50%;
+  bottom: 20px;
+  transition: ease 1.3s;
+  animation: efecto 1s normal;
+  animation-name: cambiarColor;
+  animation-duration: 6s; }
+
+@keyframes cambiarColor {
+  0% {
+    transform: scale(1); }
+  20% {
+    transform: scale(1.3); }
+  50% {
+    transform: scale(1.6); }
+  80% {
+    transform: scale(1.9); }
+  100% {
+    transform: scale(1); } }
+
+.container:hover {
+  transform: scale(1.1);
+  transition: 1.3s; }
+
+.boton {
+  width: 80px;
+  transition: ease 1s;
+  left: 91%; }
+
+.editarDc {
+  color: black;
+  font-size: 4em;
+  font-family: 'Dosis', sans-serif; }
+
+.editarOptica {
+  color: #0CE8E1;
+  font-size: 4em;
+  font-family: 'Oswald', sans-serif; }
+
+.bordeDeli {
+  border-radius: 15px;
+  border-style: solid;
+  border-color: rgba(184, 170, 170, 0.68); }
+
+/*  ---- CONTACTO ---- */
+.headerContacto {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  grid-template-areas: "barraContacto" "itemsContacto" "tituloContacto"; }
+
+.barraContacto {
+  grid-area: barraContacto;
+  border: 1.5px solid rgba(184, 170, 170, 0.68);
+  background-image: linear-gradient(0deg, #22c1c3 0%, rgba(4, 6, 3, 0.723594) 38%);
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+
+.itemsContacto {
+  grid-area: itemsContacto;
+  margin-left: 5px;
+  width: 25vh;
+  animation: menu_animado;
+  animation-duration: 5s;
+  animation-delay: 3s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in-out; }
+
+.tituloContacto {
+  grid-area: tituloContacto;
+  text-align: center; }
+
+@keyframes menu_animado {
+  0% { }
+  25% { }
+  50% { }
+  75% { }
+  100% {
+    background-color: #22c1c3; } }
+
+/*  ---- ANTEOJOS DE SOL, DE CONTACTO Y DE RECETA ---- */
+.header {
+  display: grid;
+  grid-template-columns: 1.2fr 8fr;
+  grid-template-rows: 1fr 1fr;
+  grid-template-areas: "barra barra" "items titulo"; }
+
+.barra {
+  grid-area: barra;
+  border: 1.5px solid rgba(184, 170, 170, 0.68);
+  background-image: linear-gradient(0deg, #22c1c3 0%, rgba(4, 6, 3, 0.723594) 38%);
+  position: fixed;
+  top: 0;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 10; }
+
+.items {
+  grid-area: items;
+  margin-left: 8px;
+  margin-top: 5px;
+  animation: menu_animado;
+  animation-duration: 5s;
+  animation-delay: 3s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in-out; }
+
+@keyframes menu_animado {
+  0% { }
+  25% { }
+  50% { }
+  75% { }
+  100% {
+    background-color: #22c1c3; } }
+
+.titulo {
+  grid-area: titulo;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  right: 10vh; }
+
+main article div div {
+  margin: 15px;
+  border-radius: 6px;
+  overflow: hidden;
+  background-color: #fff;
+  box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.2);
+  cursor: default;
+  transition: all 400ms ease;
+  padding: 10px;
+  text-align: center; }
+  main article div div:hover {
+    box-shadow: 0px 1px 10px rgba(5, 5, 20, 0.4);
+    transform: translate(-2%); }
+  main article div div div h2 {
+    font-weight: 400px;
+    margin-bottom: 20px; }
+  main article div div div p {
+    line-height: 1.5;
+    color: #535050; }
+
+.button, main article div div div a {
+  text-decoration: none;
+  display: inline-block;
+  padding: 10px;
+  margin-top: 8px;
+  color: #0CE8E1;
+  border: 1px solid #0CE8E1;
+  border-radius: 4px;
+  transition: all 400ms ease; }
+  .button:hover, main article div div div a:hover {
+    color: #fff;
+    background-color: #0CE8E1; }
+
 table, th, td {
   border-color: rgba(0, 0, 0, 0.2);
   border-style: solid;
   border-collapse: collapse;
   width: 50%;
   text-align: center; }
-
-li {
-  list-style: none; }
 
 /* ---- INDEX ---- */
 .mainIndex {
@@ -199,49 +363,7 @@ li {
   text-align: center;
   margin-top: 10vh; }
 
-/* ---- FOOTER GENERAL ---- */
-footer {
-  border: 1.5px solid rgba(184, 170, 170, 0.68);
-  background-image: linear-gradient(0deg, #22c1c3 0%, rgba(4, 6, 3, 0.723594) 38%);
-  text-align: center; }
-
 /*  ---- CONTACTO ---- */
-.headerContacto {
-  display: grid;
-  grid-template-columns: 1fr;
-  grid-template-rows: 1fr 1fr 1fr;
-  grid-template-areas: "barraContacto" "itemsContacto" "tituloContacto"; }
-
-.barraContacto {
-  grid-area: barraContacto;
-  border: 1.5px solid rgba(184, 170, 170, 0.68);
-  background-image: linear-gradient(0deg, #22c1c3 0%, rgba(4, 6, 3, 0.723594) 38%);
-  display: flex;
-  justify-content: center;
-  align-items: center; }
-
-.itemsContacto {
-  grid-area: itemsContacto;
-  margin-left: 5px;
-  width: 25vh;
-  animation: menu_animado;
-  animation-duration: 5s;
-  animation-delay: 3s;
-  animation-iteration-count: infinite;
-  animation-timing-function: ease-in-out; }
-
-.tituloContacto {
-  grid-area: tituloContacto;
-  text-align: center; }
-
-@keyframes menu_animado {
-  0% { }
-  25% { }
-  50% { }
-  75% { }
-  100% {
-    background-color: #22c1c3; } }
-
 .formContacto {
   display: grid;
   grid-template-columns: 1fr;
@@ -257,50 +379,6 @@ footer {
   height: 20em; }
 
 /*  ---- ANTEOJOS DE SOL, DE CONTACTO Y DE RECETA ---- */
-.header {
-  display: grid;
-  grid-template-columns: 1.2fr 8fr;
-  grid-template-rows: 1fr 1fr;
-  grid-template-areas: "barra barra" "items titulo"; }
-
-.barra {
-  grid-area: barra;
-  border: 1.5px solid rgba(184, 170, 170, 0.68);
-  background-image: linear-gradient(0deg, #22c1c3 0%, rgba(4, 6, 3, 0.723594) 38%);
-  position: fixed;
-  top: 0;
-  width: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  z-index: 10; }
-
-.items {
-  grid-area: items;
-  margin-left: 8px;
-  margin-top: 5px;
-  animation: menu_animado;
-  animation-duration: 5s;
-  animation-delay: 3s;
-  animation-iteration-count: infinite;
-  animation-timing-function: ease-in-out; }
-
-@keyframes menu_animado {
-  0% { }
-  25% { }
-  50% { }
-  75% { }
-  100% {
-    background-color: #22c1c3; } }
-
-.titulo {
-  grid-area: titulo;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  position: relative;
-  right: 10vh; }
-
 .main {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
@@ -359,39 +437,70 @@ footer {
   justify-self: center;
   margin-top: 30%; }
 
-/*  ---- ICONO DE WHATSAPP ---- */
-.container {
-  background-color: #2e6329;
-  border: 1px solid #fff;
-  position: sticky;
-  z-index: 5;
-  border-radius: 50%;
-  bottom: 20px;
-  transition: ease 1.3s;
-  animation: efecto 1s normal;
-  animation-name: cambiarColor;
-  animation-duration: 6s; }
+/*  ---- ANTEOJOS DE SOL, DE CONTACTO Y DE RECETA ---- */
+.main {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 0.5fr 0.2fr 1fr 1.5fr;
+  grid-template-areas: "img1 img1 img1 img1" "lorem lorem lorem lorem" "img2 img3 img4 img5" "img6 img7 img8 img9"; }
 
-@keyframes cambiarColor {
-  0% {
-    transform: scale(1); }
-  20% {
-    transform: scale(1.3); }
-  50% {
-    transform: scale(1.6); }
-  80% {
-    transform: scale(1.9); }
-  100% {
-    transform: scale(1); } }
+.img1 {
+  grid-area: img1;
+  text-align: center; }
 
-.container:hover {
-  transform: scale(1.1);
-  transition: 1.3s; }
+.lorem {
+  grid-area: lorem;
+  text-align: center; }
 
-.boton {
-  width: 80px;
-  transition: ease 1s;
-  left: 91%; }
+.img2 {
+  grid-area: img2;
+  display: flex;
+  justify-self: center; }
+
+.img3 {
+  grid-area: img3;
+  display: flex;
+  justify-self: center; }
+
+.img4 {
+  grid-area: img4;
+  display: flex;
+  justify-self: center; }
+
+.img5 {
+  grid-area: img5;
+  display: flex;
+  justify-self: center; }
+
+.img6 {
+  grid-area: img6;
+  display: flex;
+  justify-self: center;
+  margin-top: 30%; }
+
+.img7 {
+  grid-area: img7;
+  display: flex;
+  justify-self: center;
+  margin-top: 30%; }
+
+.img8 {
+  grid-area: img8;
+  display: flex;
+  justify-self: center;
+  margin-top: 30%; }
+
+.img9 {
+  grid-area: img9;
+  display: flex;
+  justify-self: center;
+  margin-top: 30%; }
+
+/* ---- FOOTER GENERAL ---- */
+footer {
+  border: 1.5px solid rgba(184, 170, 170, 0.68);
+  background-image: linear-gradient(0deg, #22c1c3 0%, rgba(4, 6, 3, 0.723594) 38%);
+  text-align: center; }
 
 @media only screen and (max-width: 1024px) {
   /* ---- INDEX ---- */
@@ -487,51 +596,3 @@ footer {
   .img8,
   .img9 {
     align-self: center; } }
-
-.editarDc {
-  color: black;
-  font-size: 4em;
-  font-family: 'Dosis', sans-serif; }
-
-.editarOptica {
-  color: #0CE8E1;
-  font-size: 4em;
-  font-family: 'Oswald', sans-serif; }
-
-.bordeDeli {
-  border-radius: 15px;
-  border-style: solid;
-  border-color: rgba(184, 170, 170, 0.68); }
-
-main article div div {
-  margin: 15px;
-  border-radius: 6px;
-  overflow: hidden;
-  background-color: #fff;
-  box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.2);
-  cursor: default;
-  transition: all 400ms ease;
-  padding: 10px;
-  text-align: center; }
-  main article div div:hover {
-    box-shadow: 0px 1px 10px rgba(5, 5, 20, 0.4);
-    transform: translate(-2%); }
-  main article div div div h2 {
-    font-weight: 400px;
-    margin-bottom: 20px; }
-  main article div div div p {
-    line-height: 1.5;
-    color: #535050; }
-
-.button, main article div div div a {
-  text-decoration: none;
-  display: inline-block;
-  padding: 10px;
-  margin-top: 8px;
-  color: #0CE8E1;
-  border: 1px solid #0CE8E1;
-  border-radius: 4px;
-  transition: all 400ms ease; }
-  .button:hover, main article div div div a:hover {
-    color: #fff;
-    background-color: #0CE8E1; }

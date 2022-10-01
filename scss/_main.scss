@@ -43,3 +43,400 @@ main {
     }
 }
 
+table, th, td {
+    border: {
+        color: map-get($colores , negro);
+        style: solid;
+        collapse: collapse;
+    }
+    width: 50%;
+    text-align: center;
+}
+
+/* ---- INDEX ---- */
+
+.mainIndex {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 0.7fr 0.2fr 0.1fr 0.1fr;
+    grid-template-areas: "imgIndex1 imgIndex2 imgIndex3"
+                         "loremIndex loremIndex loremIndex"
+                         "table table table"
+                         "videoIndex videoIndex videoIndex";
+}
+
+.imgIndex1 {
+    grid-area: imgIndex1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.imgIndex1 figure {
+    position: relative;
+    height: 230px;
+    width: 230px;
+    overflow: hidden;
+    border-radius: 6px;
+    box-shadow: 0px 15px 25px rgba(0, 0, 0, 0.50);
+}
+
+.imgIndex1 figure img1 {
+    transition: all 500ms ease-out;
+}
+
+.imgIndex1 figure .capa {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(11,103,123,0.6);
+    opacity: 0;
+    visibility: hidden;
+    text-align: center;
+}
+.imgIndex1 figure:hover > .capa {
+    opacity: 1;
+    visibility: visible;
+}
+
+.imgIndex1 figure:hover > .capa .h2 {
+    margin: {
+        top: 70px;
+        bottom: 15px;
+    }
+}
+
+.imgIndex1 figure .capa .h2 {
+    color: white;
+    font-weight: 400;
+    margin: {
+        bottom: 120px;
+        top: 30px;
+    }
+    transition: all 500ms ease-out;
+}
+
+.imgIndex1 figure .capa p {
+    color: white;
+    font-size: 15px;
+    line-height: 1.5;
+    width: 100%;
+    max-width: 220px;
+    margin: auto;
+}
+
+.imgIndex2 {
+    grid-area: imgIndex2;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.imgIndex2 figure {
+    position: relative;
+    height: 230px;
+    width: 230px;
+    overflow: hidden;
+    border-radius: 6px;
+    box-shadow: 0px 15px 25px rgba(0, 0, 0, 0.50);
+}
+
+.imgIndex2 figure img2 {
+    transition: all 500ms ease-out;
+}
+
+.imgIndex2 figure .capa2 {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(11,103,123,0.6);
+    opacity: 0;
+    visibility: hidden;
+    text-align: center;
+}
+.imgIndex2 figure:hover > .capa2 {
+    opacity: 1;
+    visibility: visible;
+}
+
+.imgIndex2 figure:hover > .capa2 .h2 {
+    margin: {
+        top: 70px;
+        bottom: 15px;
+    } 
+}
+
+.imgIndex2 figure .capa2 .h2 {
+    color: white;
+    font-weight: 400;
+    margin: {
+        bottom: 120px;
+        top: 30px;
+    }
+    transition: all 500ms ease-out;
+}
+
+.imgIndex2 figure .capa2 p {
+    color: white;
+    font-size: 15px;
+    line-height: 1.5;
+    width: 100%;
+    max-width: 220px;
+    margin: auto;
+}
+
+.imgIndex3 {
+    grid-area: imgIndex3;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.imgIndex3 figure {
+    position: relative;
+    height: 230px;
+    width: 230px;
+    overflow: hidden;
+    border-radius: 6px;
+    box-shadow: 0px 15px 25px rgba(0, 0, 0, 0.50);
+}
+
+.imgIndex3 figure img3 {
+    transition: all 500ms ease-out;
+}
+
+.imgIndex3 figure .capa3 {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(11,103,123,0.6);
+    opacity: 0;
+    visibility: hidden;
+    text-align: center;
+}
+.imgIndex3 figure:hover > .capa3 {
+    opacity: 1;
+    visibility: visible;
+}
+
+.imgIndex3 figure:hover > .capa3 .h2 {
+    margin: {
+        top: 70px;
+        bottom: 15px;
+    }
+}
+
+.imgIndex3 figure .capa3 .h2 {
+    color: white;
+    font-weight: 400;
+    margin: {
+        bottom: 120px;
+        top: 30px;
+    }
+    transition: all 500ms ease-out;
+}
+
+.imgIndex3 figure .capa3 p {
+    color: white;
+    font-size: 15px;
+    line-height: 1.5;
+    width: 100%;
+    max-width: 220px;
+    margin: auto;
+}
+
+.loremIndex {
+    grid-area: loremIndex;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/*-------TABLA-------*/
+
+.table {                    
+    grid-area: table;
+    display: flexbox;
+    justify-self: center;
+    background-color: rgba(78, 204, 213, 0.881);
+}
+
+
+.videoIndex {
+    grid-area: videoIndex;
+    text-align: center;
+   margin-top: 10vh;
+}
+
+/*  ---- CONTACTO ---- */
+
+
+.formContacto {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+    grid-template-areas: "form";
+}
+
+.form {
+    grid-area: form;
+    margin-left: 3vh;
+    border-radius: 0px 10px 39px 22px;
+    border: 3px solid rgba(7, 6, 6, 0.338);
+    width: 30em;
+    height: 20em;
+}
+
+    /*  ---- ANTEOJOS DE SOL, DE CONTACTO Y DE RECETA ---- */
+
+.main {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 0.5fr 0.2fr 1fr 1.5fr;
+    grid-template-areas: "img1 img1 img1 img1"
+        "lorem lorem lorem lorem"
+        "img2 img3 img4 img5"
+        "img6 img7 img8 img9";
+}
+
+.img1 {
+    grid-area: img1;
+    text-align: center
+}
+
+.lorem {
+    grid-area: lorem;
+    text-align: center;
+}
+
+.img2 {
+    grid-area: img2;
+    display: flex;
+    justify-self: center;
+}
+
+.img3 {
+    grid-area: img3;
+    display: flex;
+    justify-self: center;
+}
+
+.img4 {
+    grid-area: img4;
+    display: flex;
+    justify-self: center;
+}
+
+.img5 {
+    grid-area: img5;
+    display: flex;
+    justify-self: center;
+}
+
+.img6 {
+    grid-area: img6;
+    display: flex;
+    justify-self: center;
+    margin-top: 30%;
+}
+
+.img7 {
+    grid-area: img7;
+    display: flex;
+    justify-self: center;
+    margin-top: 30%;
+}
+
+.img8 {
+    grid-area: img8;
+    display: flex;
+    justify-self: center;
+    margin-top: 30%;
+}
+
+.img9 {
+    grid-area: img9;
+    display: flex;
+    justify-self: center;
+    margin-top: 30%;
+}
+
+    /*  ---- ANTEOJOS DE SOL, DE CONTACTO Y DE RECETA ---- */
+
+.main {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 0.5fr 0.2fr 1fr 1.5fr;
+    grid-template-areas: "img1 img1 img1 img1"
+        "lorem lorem lorem lorem"
+        "img2 img3 img4 img5"
+        "img6 img7 img8 img9";
+}
+
+.img1 {
+    grid-area: img1;
+    text-align: center
+}
+
+.lorem {
+    grid-area: lorem;
+    text-align: center;
+}
+
+.img2 {
+    grid-area: img2;
+    display: flex;
+    justify-self: center;
+}
+
+.img3 {
+    grid-area: img3;
+    display: flex;
+    justify-self: center;
+}
+
+.img4 {
+    grid-area: img4;
+    display: flex;
+    justify-self: center;
+}
+
+.img5 {
+    grid-area: img5;
+    display: flex;
+    justify-self: center;
+}
+
+.img6 {
+    grid-area: img6;
+    display: flex;
+    justify-self: center;
+    margin-top: 30%;
+}
+
+.img7 {
+    grid-area: img7;
+    display: flex;
+    justify-self: center;
+    margin-top: 30%;
+}
+
+.img8 {
+    grid-area: img8;
+    display: flex;
+    justify-self: center;
+    margin-top: 30%;
+}
+
+.img9 {
+    grid-area: img9;
+    display: flex;
+    justify-self: center;
+    margin-top: 30%;
+}
