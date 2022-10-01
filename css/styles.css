@@ -11,6 +11,13 @@ body {
 a {
   text-decoration: none; }
 
+table, th, td {
+  border-color: rgba(0, 0, 0, 0.2);
+  border-style: solid;
+  border-collapse: collapse;
+  width: 50%;
+  text-align: center; }
+
 li {
   list-style: none; }
 
@@ -178,18 +185,11 @@ main article div div {
     color: #fff;
     background-color: #0CE8E1; }
 
-table, th, td {
-  border-color: rgba(0, 0, 0, 0.2);
-  border-style: solid;
-  border-collapse: collapse;
-  width: 50%;
-  text-align: center; }
-
 /* ---- INDEX ---- */
 .mainIndex {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
-  grid-template-rows: 0.7fr 0.2fr 0.1fr 0.1fr;
+  grid-template-rows: 0.7fr 0.5fr 0.1fr 1.5fr;
   grid-template-areas: "imgIndex1 imgIndex2 imgIndex3" "loremIndex loremIndex loremIndex" "table table table" "videoIndex videoIndex videoIndex"; }
 
 .imgIndex1 {
@@ -563,15 +563,17 @@ footer {
   .editarOptica {
     font-size: 3em; }
   .mainIndex {
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr 1fr 1fr .1fr .1fr .1fr;
-    grid-template-areas: "imgIndex1 imgIndex1" "imgIndex2 imgIndex2" "imgIndex3 imgIndex3" "loremIndex loremIndex" "table table" "videoIndex videoIndex"; }
+    grid-template-columns: 1fr;
+    grid-template-rows: 1.3fr 1.3fr 1.3fr .1fr .1fr .1fr;
+    grid-template-areas: "imgIndex1" "imgIndex2" "imgIndex3" "loremIndex" "table" "videoIndex"; }
   .loremIndex {
     text-align: center; }
   .boton {
     width: 48px;
     left: 83%;
     display: flex;
+    flex-wrap: wrap; }
+  .videoIndex {
     flex-wrap: wrap; }
   /*  ---- CONTACTO ---- */
   .form {

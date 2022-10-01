@@ -14,6 +14,16 @@ a {
     text-decoration: none;
 }
 
+table, th, td {
+    border: {
+        color: map-get($colores , negro);
+        style: solid;
+        collapse: collapse;
+    }
+    width: 50%;
+    text-align: center;
+}
+
 li {
     list-style: none;
 }

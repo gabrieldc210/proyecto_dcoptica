@@ -104,14 +104,14 @@
     }
     
     .mainIndex {
-        grid-template-columns: 1fr 1fr;
-        grid-template-rows:  1fr 1fr 1fr .1fr .1fr .1fr;
-        grid-template-areas: "imgIndex1 imgIndex1"
-                             "imgIndex2 imgIndex2"
-                             "imgIndex3 imgIndex3"
-                             "loremIndex loremIndex"
-                             "table table"
-                             "videoIndex videoIndex";
+        grid-template-columns: 1fr;
+        grid-template-rows:  1.3fr 1.3fr 1.3fr .1fr .1fr .1fr;
+        grid-template-areas: "imgIndex1"
+                             "imgIndex2"
+                             "imgIndex3"
+                             "loremIndex"
+                             "table"
+                             "videoIndex";
     }
 
     .loremIndex {
@@ -124,6 +124,10 @@
         display: flex;
         flex-wrap: wrap;
     }
+
+    .videoIndex {
+        flex-wrap: wrap;
+}
 
     /*  ---- CONTACTO ---- */
 

@@ -43,22 +43,12 @@ main {
     }
 }
 
-table, th, td {
-    border: {
-        color: map-get($colores , negro);
-        style: solid;
-        collapse: collapse;
-    }
-    width: 50%;
-    text-align: center;
-}
-
 /* ---- INDEX ---- */
 
 .mainIndex {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 0.7fr 0.2fr 0.1fr 0.1fr;
+    grid-template-rows: 0.7fr 0.5fr 0.1fr 1.5fr;
     grid-template-areas: "imgIndex1 imgIndex2 imgIndex3"
                          "loremIndex loremIndex loremIndex"
                          "table table table"
