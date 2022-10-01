@@ -8,23 +8,8 @@ body {
   background-size: cover;
   display: block; }
 
-.editarDc {
-  color: black;
-  font-size: 4em;
-  font-family: 'Dosis', sans-serif; }
-
-.editarOptica {
-  color: #0CE8E1;
-  font-size: 4em;
-  font-family: 'Oswald', sans-serif; }
-
 a {
   text-decoration: none; }
-
-.bordeDeli {
-  border-radius: 15px;
-  border-style: solid;
-  border-color: rgba(184, 170, 170, 0.68); }
 
 table, th, td {
   border-color: rgba(0, 0, 0, 0.2);
@@ -502,6 +487,21 @@ footer {
   .img8,
   .img9 {
     align-self: center; } }
+
+.editarDc {
+  color: black;
+  font-size: 4em;
+  font-family: 'Dosis', sans-serif; }
+
+.editarOptica {
+  color: #0CE8E1;
+  font-size: 4em;
+  font-family: 'Oswald', sans-serif; }
+
+.bordeDeli {
+  border-radius: 15px;
+  border-style: solid;
+  border-color: rgba(184, 170, 170, 0.68); }
 
 main article div div {
   margin: 15px;

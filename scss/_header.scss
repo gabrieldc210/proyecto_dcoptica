@@ -1,0 +1,23 @@
+.editarDc {
+    color: black;
+    font: {
+        size: $font-size;
+        family: 'Dosis', sans-serif; 
+    }
+}
+
+.editarOptica {
+    color: map-get($colores , verde);
+    font: {
+        size: $font-size;
+        family: 'Oswald', sans-serif;
+    }
+}
+
+.bordeDeli {
+    border: {
+        radius: 15px;
+        style: solid;
+        color: map-get($colores , gris-claro);
+    }
+}
