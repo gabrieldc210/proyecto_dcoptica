@@ -10,9 +10,6 @@
 
     /*  ---- ANTEOJOS DE SOL, DE CONTACTO Y DE RECETA ---- */
 
-    .header {
-        grid-template-columns: 1.8fr 8fr;
-    }
 
     .main {
         grid-template-rows: 0.5fr 0.1fr 0fr 1fr;
@@ -28,6 +25,10 @@
 @media only screen and (max-width: 800px) {
 
     /* ---- INDEX ---- */
+
+    .items a {
+        padding: 12px 5px;
+    }
 
     .mainIndex {
         grid-template-columns: 1fr 1fr;
@@ -53,9 +54,6 @@
 
     /*  ---- ANTEOJOS DE SOL, DE CONTACTO Y DE RECETA ---- */
 
-    .header {
-        grid-template-rows: 1fr 1fr;
-    }
 
     .main {
         display: grid;
@@ -136,12 +134,6 @@
     }
 
       /*  ---- ANTEOJOS DE SOL, DE CONTACTO Y DE RECETA ---- */
-
-    .header {
-        display: grid;
-        grid-template-columns: 0.4fr 1fr;
-        grid-template-rows: .9fr 1fr;
-    }
 
     .titulo {
         right: 0;

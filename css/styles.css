@@ -11,6 +11,19 @@ body {
 a {
   text-decoration: none; }
 
+.items a {
+  color: black;
+  display: block;
+  padding: 12px 26px; }
+
+.barraMenu {
+  color: #999999;
+  padding: 10px 0 0 0; }
+
+.items a:hover {
+  color: #fff;
+  background: rgba(0, 0, 0, 0.2); }
+
 table, th, td {
   border-color: rgba(0, 0, 0, 0.2);
   border-style: solid;
@@ -19,7 +32,8 @@ table, th, td {
   text-align: center; }
 
 li {
-  list-style: none; }
+  list-style: none;
+  float: left; }
 
 /*  ---- ICONO DE WHATSAPP ---- */
 .container {
@@ -65,60 +79,18 @@ li {
   font-size: 4em;
   font-family: 'Oswald', sans-serif; }
 
-.bordeDeli {
-  border-radius: 15px;
-  border-style: solid;
-  border-color: rgba(184, 170, 170, 0.68); }
-
-/*  ---- CONTACTO ---- */
-.headerContacto {
+/*  ---- ANTEOJOS DE SOL, DE CONTACTO, DE RECETA Y CONTACTO---- */
+.header {
   display: grid;
   grid-template-columns: 1fr;
   grid-template-rows: 1fr 1fr 1fr;
-  grid-template-areas: "barraContacto" "itemsContacto" "tituloContacto"; }
-
-.barraContacto {
-  grid-area: barraContacto;
-  border: 1.5px solid rgba(184, 170, 170, 0.68);
-  background-image: linear-gradient(0deg, #22c1c3 0%, rgba(4, 6, 3, 0.723594) 38%);
-  display: flex;
-  justify-content: center;
-  align-items: center; }
-
-.itemsContacto {
-  grid-area: itemsContacto;
-  margin-left: 5px;
-  width: 25vh;
-  animation: menu_animado;
-  animation-duration: 5s;
-  animation-delay: 3s;
-  animation-iteration-count: infinite;
-  animation-timing-function: ease-in-out; }
-
-.tituloContacto {
-  grid-area: tituloContacto;
-  text-align: center; }
-
-@keyframes menu_animado {
-  0% { }
-  25% { }
-  50% { }
-  75% { }
-  100% {
-    background-color: #22c1c3; } }
-
-/*  ---- ANTEOJOS DE SOL, DE CONTACTO Y DE RECETA ---- */
-.header {
-  display: grid;
-  grid-template-columns: 1.2fr 8fr;
-  grid-template-rows: 1fr 1fr;
-  grid-template-areas: "barra barra" "items titulo"; }
+  grid-template-areas: "barra" "items" "titulo"; }
 
 .barra {
   grid-area: barra;
   border: 1.5px solid rgba(184, 170, 170, 0.68);
   background-image: linear-gradient(0deg, #22c1c3 0%, rgba(4, 6, 3, 0.723594) 38%);
-  position: fixed;
+  position: sticky;
   top: 0;
   width: 100%;
   display: flex;
@@ -128,29 +100,21 @@ li {
 
 .items {
   grid-area: items;
-  margin-left: 8px;
-  margin-top: 5px;
-  animation: menu_animado;
-  animation-duration: 5s;
-  animation-delay: 3s;
-  animation-iteration-count: infinite;
-  animation-timing-function: ease-in-out; }
-
-@keyframes menu_animado {
-  0% { }
-  25% { }
-  50% { }
-  75% { }
-  100% {
-    background-color: #22c1c3; } }
+  background-color: #22c1c3;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  font-family: 'Oswald', sans-serif;
+  font-size: 18px;
+  display: flex;
+  justify-content: center;
+  align-items: center; }
 
 .titulo {
   grid-area: titulo;
   display: flex;
-  justify-content: center;
-  align-items: center;
-  position: relative;
-  right: 10vh; }
+  justify-self: center;
+  align-self: center; }
 
 main article div div {
   margin: 15px;
@@ -509,8 +473,6 @@ footer {
     transition: ease 1s;
     left: 89%; }
   /*  ---- ANTEOJOS DE SOL, DE CONTACTO Y DE RECETA ---- */
-  .header {
-    grid-template-columns: 1.8fr 8fr; }
   .main {
     grid-template-rows: 0.5fr 0.1fr 0fr 1fr; }
   .img1 {
@@ -520,6 +482,8 @@ footer {
 
 @media only screen and (max-width: 800px) {
   /* ---- INDEX ---- */
+  .items a {
+    padding: 12px 5px; }
   .mainIndex {
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr 1fr 0.2fr 0.1fr 0.1fr;
@@ -533,8 +497,6 @@ footer {
     width: 60px;
     left: 88%; }
   /*  ---- ANTEOJOS DE SOL, DE CONTACTO Y DE RECETA ---- */
-  .header {
-    grid-template-rows: 1fr 1fr; }
   .main {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -579,10 +541,6 @@ footer {
   .form {
     width: 18em; }
   /*  ---- ANTEOJOS DE SOL, DE CONTACTO Y DE RECETA ---- */
-  .header {
-    display: grid;
-    grid-template-columns: 0.4fr 1fr;
-    grid-template-rows: .9fr 1fr; }
   .titulo {
     right: 0; }
   .main {
