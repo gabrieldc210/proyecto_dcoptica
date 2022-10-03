@@ -31,7 +31,7 @@ table, th, td {
   width: 50%;
   text-align: center; }
 
-li {
+.li1 {
   list-style: none;
   float: left; }
 
@@ -459,12 +459,6 @@ main article div div {
   display: flex;
   justify-self: center;
   margin-top: 30%; }
-
-/* ---- FOOTER GENERAL ---- */
-footer {
-  border: 1.5px solid rgba(184, 170, 170, 0.68);
-  background-image: linear-gradient(0deg, #22c1c3 0%, rgba(4, 6, 3, 0.723594) 38%);
-  text-align: center; }
 
 @media only screen and (max-width: 1024px) {
   /* ---- INDEX ---- */
