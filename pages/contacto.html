@@ -13,6 +13,7 @@
   <link
     href="https://fonts.googleapis.com/css2?family=Dosis:wght@200;400&family=Open+Sans:ital,wght@0,400;1,300&family=Oswald&display=swap"
     rel="stylesheet">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
   <link rel="stylesheet" href="../css/styles.css">
   <title>Contacto</title>
 </head>
@@ -33,15 +34,15 @@
     <div class="items">
       <nav>
         <ul>
-          <li><a href="../index.html">Inicio</a></li>
-          <li class="barraMenu">|</li>
-          <li><a href="./anteojos_de_sol.html">Anteojos de sol</a></li>
-          <li class="barraMenu">|</li>
-          <li><a href="./anteojo_de_receta.html">Anteojos de receta</a></li>
-          <li class="barraMenu">|</li>
-          <li><a href="./lentes_de_contacto.html">Lentes de contacto</a></li>
-          <li class="barraMenu">|</li>
-          <li><a href="./contacto.html">Contacto</a></li>
+          <li class="li1"><a href="../index.html">Inicio</a></li>
+          <li class="barraMenu li1">|</li>
+          <li class="li1"><a href="./anteojos_de_sol.html">Anteojos de sol</a></li>
+          <li class="barraMenu li1">|</li>
+          <li class="li1"><a href="./anteojo_de_receta.html">Anteojos de receta</a></li>
+          <li class="barraMenu li1">|</li>
+          <li class="li1"><a href="./lentes_de_contacto.html">Lentes de contacto</a></li>
+          <li class="barraMenu li1">|</li>
+          <li class="li1"><a href="./contacto.html">Contacto</a></li>
         </ul>
       </nav>
     </div>
@@ -50,7 +51,6 @@
 
   <main class="formContacto">
     <form class="form" action="" method="">
-      <fieldset>
         <legend><b>Contacto</b></legend>
         <p>Comunicate al whatsapp 1122334455.</p>
         <p>dcoptica@gmail.com</p>
@@ -76,13 +76,12 @@
           <option value="v">reparaciones</option>
         </select>
         <div>
-          <textarea name="Mensaje" id="message" cols="20" rows="5" placeholder="ingrese su Mensaje"></textarea>
+          <textarea name="Mensaje" id="message" cols="20" rows="3" placeholder="ingrese su Mensaje"></textarea>
         </div>
         <div>
           <input type="reset" value="Borrar">
           <button>Enviar</button>
         </div>
-      </fieldset>
     </form>
   </main>
 
@@ -94,17 +93,63 @@
 
   <hr>
   <footer>
-    <address>
-      <div>
-        <p>Santa Fe 1400 </p>
+      <div class="containerr">
+          <div class="sec aboutus">
+              <h2>Sobre Nosotros</h2>
+              <p>Somos una óptica que nacio en el año 2000 y nos dedicamos a la comercialización de
+                  productos para la salud visual. En Dc óptica encontraras gran variedad de anteojos, gafas de sol, lentes de contactos, soluciones, anteojos recetados.</p>
+              <ul class="sci">
+                  <li><a href="https://www.facebook.com/" class="fa fa-facebook"></a></li>
+                  <li><a href="https://twitter.com/" class="fa fa-twitter"></a></li>
+                  <li><a href="https://www.instagram.com/" class="fa fa-instagram"></a></li>
+                  <li><a href="https://www.youtube.com/watch?v=pflqXQnkVec&t=1s" class="fa fa-youtube-play"></a></li>
+              </ul>
+          </div>
+          <div class="sec quiklinks">
+              <h2>Menu</h2>
+              <ul>
+                  <li><a href="../index.html">Inicio</a></li>
+                  <li><a href="./anteojos_de_sol.html">Anteojos de sol</a></li>
+                  <li><a href="./anteojo_de_receta.html">Anteojos de receta</a></li>
+                  <li><a href="./lentes_de_contacto.html">Lentes de contacto</a></li>
+                  <li><a href="./contacto.html">Contacto</a></li>
+              </ul>
+          </div>
+          <div class="sec quiklinks">
+              <h2>Obra social</h2>
+              <ul>
+                  <li><a href="./contacto.html">Pami</a></li>
+                  <li><a href="./contacto.html">Sipssa</a></li>
+                  <li><a href="./contacto.html">Union Personal</a></li>
+                  <li><a href="./contacto.html">Galeno</a></li>
+                  <li><a href="./contacto.html">Osecac</a></li>
+              </ul>
+          </div>
+          <div class="sec contact">
+              <h2>Contacto</h2>
+              <ul class="info">
+                  <li>
+                      <span class="fa fa-map-marker"></span>
+                      <span>capitan 4400 <br>
+                      CABA, LP 2334 <br> Argentina</span>
+                  </li>
+                  <li>
+                      <span class="fa fa-phone"></span>
+                      <p><a href="tel:+541122334455">+54 11 2233 4455</a><br>
+                      <a href="tel:+5442603260">+54 4260 3260</a></p>
+                  </li>
+                  <li>
+                      <span  class="fa fa-envelope-square"></span>
+                      <p><a href="gabriel:dcoptica@gmail.com">dcoptica@gmail.com</a></p>
+                  </li>
+              </ul>
+          </div>
       </div>
-      <div>
-        <p>dcoptica@gmail.com</p>
-      </div>
-      <p>1122334455</p>
-    </address>
-    <p>copyright Dc Optica - 2022. Todos los derechos reservados</p>
   </footer>
+  <div class="copyrightText">
+      <p>copyright Dc Optica - 2022. Todos los derechos reservados</p>
+  </div>
+
 </body>
 
 </html>

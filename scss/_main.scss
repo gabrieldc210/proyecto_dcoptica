@@ -262,6 +262,10 @@ main {
     grid-area: videoIndex;
     text-align: center;
    margin-top: 10vh;
+   padding-bottom: 25%;
+   padding-top: 0px;
+   height: 0;
+   overflow: hidden;
 }
 
 /*  ---- CONTACTO ---- */
@@ -279,7 +283,7 @@ main {
     margin-left: 3vh;
     border-radius: 0px 10px 39px 22px;
     border: 3px solid rgba(7, 6, 6, 0.338);
-    width: 30em;
+    width: 24em;
     height: 20em;
 }
 

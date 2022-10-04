@@ -3,9 +3,8 @@
     /* ---- INDEX ---- */
 
     .boton{
-        width: 80px;
-        transition: ease 1s;
-        left: 89%;
+        width: 60px;
+        left: 92%;
     }
 
     /*  ---- ANTEOJOS DE SOL, DE CONTACTO Y DE RECETA ---- */
@@ -32,7 +31,7 @@
 
     .mainIndex {
         grid-template-columns: 1fr 1fr;
-        grid-template-rows: 1fr 1fr 0.2fr 0.1fr 0.1fr;
+        grid-template-rows: 0.5fr 1fr 0.1fr 0.1fr 0.2fr;
         grid-template-areas: "imgIndex1 imgIndex2"
                              "imgIndex3 imgIndex3"
                              "loremIndex loremIndex"
@@ -45,11 +44,12 @@
        display: flex;
        justify-content: center;
        flex-wrap: wrap;  
+       padding-bottom: 43%;
     }
 
     .boton{
         width: 60px;
-        left: 88%;
+        left: 89%;
     }
 
     /*  ---- ANTEOJOS DE SOL, DE CONTACTO Y DE RECETA ---- */
@@ -87,6 +87,10 @@
     .img9 {
         margin-top: 0;
     }
+
+    footer .containerr {
+        grid-template-columns: repeat(2, 1fr);
+    }
 }
    
 @media only screen and (max-width: 500px) {
@@ -103,7 +107,7 @@
     
     .mainIndex {
         grid-template-columns: 1fr;
-        grid-template-rows:  1.3fr 1.3fr 1.3fr .1fr .1fr .1fr;
+        grid-template-rows: 1.5fr 1.5fr 1.5fr 0.5fr 1fr 1fr;
         grid-template-areas: "imgIndex1"
                              "imgIndex2"
                              "imgIndex3"
@@ -128,6 +132,10 @@
 }
 
     /*  ---- CONTACTO ---- */
+
+    .items {
+        font-size: 17px
+    }
 
     .form {
         width: 18em;
@@ -163,5 +171,9 @@
     .img8,
     .img9 {    
     align-self: center;
+    }
+
+    footer .containerr {
+        grid-template-columns: repeat(1, 1fr);
     }
 }
